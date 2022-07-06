@@ -1,0 +1,492 @@
+/* info_premium.html.twig (Iphone SE (375x667))*/
+
+span {
+    color: var(--text-green);
+}
+
+.contact-first-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    top: 3vh;
+    height: auto;
+    width: 100%;
+    background: var(--first-background);
+    color: var(--text-icons);
+    margin-bottom: 10vh;
+}
+
+.contact-first-wrapper h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 1.6rem;
+    margin: 5%;
+}
+
+.contact-first-wrapper p {
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+    line-height: 5vh;
+}
+
+.contact-first-wrapper h3 {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin: 5%;
+}
+
+.contact-first-wrapper h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin: 5%;
+}
+
+.contact-socialmedia-wrapper {
+    margin-top: 5%;
+    background: var(--second-background);
+}
+
+.contact-socialmedia-btn {
+    display: flex;
+    justify-content: center;
+    margin: 5%;
+    font-size: 2.1rem;
+}
+
+.contact-socialmedia-btn a {
+    margin-inline: 8%;
+    font-size: 2.2rem;
+}
+
+.contact-second-wrapper {
+    position: relative;
+    color: var(--text-icons);
+    margin-inline: 5%;
+    background: var(--fourth-background);
+    border: solid 2px var(--text-green);
+    border-radius: 15px;
+    margin-bottom: 8vh;
+}
+
+.contact-second-wrapper h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 1.6rem;
+    margin: 5%;
+}
+
+.contact-second-wrapper p {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 5%;
+    margin-inline: 5%;
+    margin-bottom: 7%;
+}
+
+.premium-assistance-btn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8vh;
+    width: 40vw;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 1.2rem;
+    color: var(--text-icons);
+    border-radius: 15px;
+    margin-bottom: 10%;
+    background: var(--third-background);
+    box-shadow:  5px 5px 10px var(--first-shadow-third-background),
+                -5px -5px 10px var(--second-shadow-third-background);
+}
+
+.premium-assistance-btn:hover {
+    box-shadow: inset 5px 5px 10px var(--first-shadow-third-background),
+                inset -5px -5px 10px var(--second-shadow-third-background);
+    transition: all 0.2s ease-out;
+    color: var(--text-green);
+}
+
+/* editProfile.html.twig (Iphone 13 max (428x926)) */
+@media (min-width: 428px) {
+
+    .contact-first-wrapper {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        top: 1vh;
+        height: auto;
+        width: 100%;
+        margin-bottom: 5vh;
+    }
+
+    .contact-first-wrapper h1 {
+        display: flex;
+        justify-content: center;
+        font-size: 1.8rem;
+        margin: 5%;
+    }
+
+    .contact-first-wrapper h3 {
+        display: flex;
+        justify-content: center;
+        font-size: 1.7rem;
+        margin: 5%;
+    }
+
+    .contact-first-wrapper p {
+        display: flex;
+        justify-content: center;
+        font-size: 1.3rem;
+        line-height: 3vh;
+    }
+
+    .contact-first-wrapper h2 {
+        display: flex;
+        justify-content: center;
+        font-size: 1.7rem;
+        margin: 5%;
+    }
+
+    .contact-second-wrapper {
+        position: relative;
+        margin-inline: 10%;
+        border-radius: 15px;
+        margin-bottom: 5vh;
+    }
+
+    .contact-second-wrapper h2 {
+        display: flex;
+        justify-content: center;
+        font-size: 1.8rem;
+        margin: 5%;
+    }
+
+    .contact-second-wrapper p {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: 1.3rem;
+        margin-top: 5%;
+        margin-inline: 5%;
+        margin-bottom: 7%;
+    }
+
+    .premium-assistance-btn {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 6vh;
+        width: 40vw;
+        left: 50%;
+        transform: translate(-50%);
+        font-size: 1.3rem;
+        border-radius: 15px;
+        margin-bottom: 10%;
+    }
+}
+
+/* editProfile.html.twig (iPad (810x1080)) */
+@media (min-width: 810px) {
+
+    .contact-first-wrapper h1 {
+        display: flex;
+        justify-content: center;
+        font-size: 1.9rem;
+        margin: 5%;
+    }
+
+    .contact-first-wrapper h3 {
+        display: flex;
+        justify-content: center;
+        font-size: 1.8rem;
+        margin: 5%;
+    }
+
+    .contact-first-wrapper p {
+        display: flex;
+        justify-content: center;
+        font-size: 1.4rem;
+        line-height: 3vh;
+    }
+
+    .contact-first-wrapper h2 {
+        display: flex;
+        justify-content: center;
+        font-size: 1.8rem;
+        margin: 3%;
+    }
+
+    .contact-socialmedia-btn {
+        display: flex;
+        justify-content: center;
+        margin: 3%;
+        font-size: 2.1rem;
+    }
+
+    .contact-second-wrapper {
+        position: relative;
+        margin-inline: 15%;
+        border-radius: 15px;
+        margin-bottom: 4vh;
+    }
+
+    .contact-second-wrapper h2 {
+        display: flex;
+        justify-content: center;
+        font-size: 1.9rem;
+        margin: 5%;
+    }
+
+    .contact-second-wrapper p {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: 1.4rem;
+        margin-top: 5%;
+        margin-inline: 5%;
+        margin-bottom: 7%;
+    }
+
+    .contact-socialmedia-btn a {
+        margin-inline: 7%;
+        font-size: 2.4rem;
+    }
+
+    .premium-assistance-btn {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 6vh;
+        width: 30vw;
+        left: 50%;
+        transform: translate(-50%);
+        font-size: 1.4rem;
+        border-radius: 15px;
+        margin-bottom: 8%;
+    }
+}
+
+/* editProfile.html.twig (iPad Pro(1024x1366)) */
+@media (min-width: 1024px) {
+
+    .contact-first-wrapper h1 {
+        display: flex;
+        justify-content: center;
+        font-size: 2rem;
+        margin: 5%;
+    }
+
+    .contact-first-wrapper h3 {
+        display: flex;
+        justify-content: center;
+        font-size: 1.9rem;
+        margin: 5%;
+    }
+
+    .contact-first-wrapper p {
+        display: flex;
+        justify-content: center;
+        font-size: 1.5rem;
+        line-height: 3vh;
+    }
+
+    .contact-first-wrapper h2 {
+        display: flex;
+        justify-content: center;
+        font-size: 1.9rem;
+        margin: 3%;
+    }
+
+    .contact-socialmedia-btn {
+        display: flex;
+        justify-content: center;
+        margin: 3%;
+        font-size: 2.1rem;
+    }
+
+    .contact-second-wrapper {
+        position: relative;
+        margin-inline: 17%;
+        border-radius: 15px;
+        margin-bottom: 4vh;
+    }
+
+    .contact-second-wrapper h2 {
+        display: flex;
+        justify-content: center;
+        font-size: 2rem;
+        margin: 5%;
+    }
+
+    .contact-second-wrapper p {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: 1.5rem;
+        margin-top: 5%;
+        margin-inline: 5%;
+        margin-bottom: 7%;
+    }
+
+    .contact-socialmedia-btn a {
+        margin-inline: 7%;
+        font-size: 2.5rem;
+    }
+
+    .premium-assistance-btn {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 5vh;
+        width: 25vw;
+        left: 50%;
+        transform: translate(-50%);
+        font-size: 1.5rem;
+        border-radius: 15px;
+        margin-bottom: 7%;
+    }
+}
+
+/* editProfile.html.twig (Laptop MDPI(1280x800)) */
+@media (min-width: 1280px) {
+
+    .contact-first-wrapper h1 {
+        display: flex;
+        justify-content: center;
+        font-size: 2rem;
+        margin: 3%;
+    }
+
+    .contact-first-wrapper h3 {
+        display: flex;
+        justify-content: center;
+        font-size: 1.9rem;
+        margin: 3%;
+    }
+
+    .contact-first-wrapper p {
+        display: flex;
+        justify-content: center;
+        font-size: 1.5rem;
+        line-height: 4.5vh;
+    }
+
+    .contact-second-wrapper {
+        position: relative;
+        margin-inline: 20%;
+        border-radius: 15px;
+        margin-bottom: 4vh;
+    }
+
+    .contact-socialmedia-btn a {
+        margin-inline: 7%;
+        font-size: 2.7rem;
+    }
+
+    .premium-assistance-btn {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 7vh;
+        width: 25vw;
+        left: 50%;
+        transform: translate(-50%);
+        font-size: 1.5rem;
+        border-radius: 15px;
+        margin-bottom: 5%;
+    }
+}
+
+/* editProfile.html.twig (Galaxy tab S7(1600x2560)) */
+@media (min-width: 1600px) {
+
+    .contact-first-wrapper p {
+        display: flex;
+        justify-content: center;
+        font-size: 1.5rem;
+        line-height: 2vh;
+    }
+
+    .contact-socialmedia-btn a {
+        margin-inline: 6%;
+        font-size: 2.7rem;
+    }
+
+    .contact-second-wrapper {
+        position: relative;
+        margin-inline: 20%;
+        border-radius: 15px;
+        margin-bottom: 4vh;
+    }
+
+    .premium-assistance-btn {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 2.5vh;
+        width: 17vw;
+        left: 50%;
+        transform: translate(-50%);
+        font-size: 1.5rem;
+        border-radius: 15px;
+        margin-bottom: 5%;
+    }
+}
+
+/* editProfile.html.twig (PC (1920x1080)) */
+@media (min-width: 1920px) {
+
+    .contact-first-wrapper p {
+        display: flex;
+        justify-content: center;
+        font-size: 1.5rem;
+        line-height: 3.2vh;
+    }
+
+    .contact-socialmedia-btn a {
+        margin-inline: 5%;
+        font-size: 2.8rem;
+    }
+
+    .contact-second-wrapper {
+        position: relative;
+        margin-inline: 25%;
+        border-radius: 15px;
+        margin-bottom: 4vh;
+    }
+
+    .premium-assistance-btn {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 5vh;
+        width: 12vw;
+        left: 50%;
+        transform: translate(-50%);
+        font-size: 1.5rem;
+        border-radius: 15px;
+        margin-bottom: 5%;
+    }
+}
+
+/* editProfile.html.twig (PC (2560x1440)) */
+@media (min-width: 2560px) {
+
+    .contact-socialmedia-btn a {
+        margin-inline: 4%;
+        font-size: 3rem;
+    }
+}

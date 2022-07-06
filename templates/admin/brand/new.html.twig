@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Add a new Brand{% endblock %}
+
+{% block body %}
+    <h1>Add a new Brand</h1>
+
+    {{ include('admin/brand/_form.html.twig') }}
+
+    <a href="{{ path('admin_brand_index') }}">back to list</a>
+{% endblock %}

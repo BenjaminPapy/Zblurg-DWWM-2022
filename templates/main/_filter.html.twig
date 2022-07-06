@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" 
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    </head>
+    <body>
+        {{ form_start(form, {attr: {class: 'filter js-filter-form'}}) }}
+        <div class="body-filter">
+            <div class="filter-wrapper">
+                <div class="filter-row-search">
+                    <h4>Spaceship Search</h4>
+                    {{ form_row(form.q) }}
+                </div>
+                <button type="submit" class="ship-search-btn">Search</button>
+                <div class="filter-row">
+                    <div class="filter-click" onclick="openFilterBrand()">
+                        <i class="fa-solid fa-bars"></i>
+                        <h4><span style="color: #37b602;">B</span>rands</h4>
+                    </div>
+                    <div class="filter-items-brand">{{ form_row(form.brand) }}</div>
+                </div>
+                <div class="filter-row">
+                    <div class="filter-click" onclick="openFilterType()">
+                        <i class="fa-solid fa-bars"></i>
+                        <h4><span style="color: #37b602;">T</span>ypes</h4>
+                    </div>
+                    <div class="filter-items-type">{{ form_row(form.type) }}</div>
+                </div>  
+                <div class="filter-row">
+                    <div class="filter-click" onclick="openFilterSize()">
+                        <i class="fa-solid fa-bars"></i>
+                        <h4><span style="color: #37b602;">S</span>izes</h4>
+                    </div>
+                    <div class="filter-items-size">{{ form_row(form.size) }}</div>
+                </div>
+                <div class="filter-row">
+                    <div class="filter-click" onclick="openFilterPremium()">
+                        <i class="fa-solid fa-bars"></i>
+                        <h4><span style="color: #37b602;">P</span>remium</h4>
+                    </div>
+                    <div class="filter-items-premium">{{ form_row(form.premium) }}</div>
+                </div>
+            </div>
+            <div class="filter-line"></div>
+        </div>
+        {{ form_end(form) }}
+    </body>
+    <script type="text/javascript">
+        function openFilterBrand() {
+            document.querySelector('.filter-items-brand').classList.toggle('open');
+        }
+        function openFilterType() {
+            document.querySelector('.filter-items-type').classList.toggle('open');
+        }
+        function openFilterSize() {
+            document.querySelector('.filter-items-size').classList.toggle('open');
+        }
+        function openFilterPremium() {
+            document.querySelector('.filter-items-premium').classList.toggle('open');
+        }
+    </script>
+</html>

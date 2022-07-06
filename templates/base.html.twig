@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}ZBLURG{% endblock %}</title>
+        <!-- balises pour le responsive -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Css perso -->
+        <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/style-profile.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/style-info-premium.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/style-ship-show.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/contact.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/legal-notice.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/error-pages.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/reset.css') }}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        {{ encore_entry_link_tags('app') }}
+        {{ encore_entry_script_tags('app') | replace({'src=': 'defer src='}) | raw }}
+    </head>
+    <body>
+        <header>
+            <a class="logo" href="{{ path("homepage") }}"><img src="/images/logo.png" alt="Logo"></a>
+            <a class="btn-premium" href="{{ path("premium_info") }}"><p>Zblurg <span>PREMIUM</span></p></a>
+
+            <div class="theme-btn-wrapper">
+                <input type="checkbox" class="checkbox" id="check" onclick="changeStatus()">
+                    <label class="label" for="check">
+                        <i id="icon-theme" class="fa-solid fa-moon"></i>
+                    </label>
+                </input>
+            </div>
+
+
+            <div class="container-nav-header">
+                <div class="header-user-name"><p>{{ app.user.lastName|default('') }}</p><p>{{ app.user.firstName|default('') }}</p></div>
+                {% if not app.user %}
+                    <a class="btn-login" href="{{ path("app_login") }}"><p>Login</p></a>
+                    <a class="btn-registration" href="{{ path("app_register") }}"><p>Register</p></a>
+                {% else %}
+                    <a class="btn-logout" href="{{ path("app_logout") }}"><p>Logout</p></a>
+                    <a class="btn-profil" href="{{ path("app_users_profile") }}"><p>My profile</p></a>
+                {% endif %}
+            </div>
+        </header>
+        <main>
+        {% block body %}
+        {% endblock %}
+        </main>
+        <footer>
+            <section class="wrapper-footer">
+                <a class="btn-footer" href="{{ path("contact") }}"><p>Contact</p></a>
+                <a class="btn-footer" href="{{ path("legal_notice") }}"><p>Legal notice</p></a>
+            </section>  
+        </footer>
+    </body>
+</html>

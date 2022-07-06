@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Add a new Ship{% endblock %}
+
+{% block body %}
+    <h1>Add a new Ship</h1>
+
+    {{ include('admin/ship/_form.html.twig') }}
+
+    <a href="{{ path('admin_ship_index') }}">back to list</a>
+{% endblock %}

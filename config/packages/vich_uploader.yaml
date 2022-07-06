@@ -1,0 +1,28 @@
+vich_uploader:
+    db_driver: orm
+
+    mappings:
+        brand_logo:
+            uri_prefix: '%brand_logo%'
+            upload_destination: '%kernel.project_dir%/public%brand_logo%'
+            namer: Vich\UploaderBundle\Naming\SmartUniqueNamer
+            delete_on_update: true
+            delete_on_remove: true
+        ship_view:
+            uri_prefix: '%ship_view%'
+            upload_destination: '%kernel.project_dir%/public%ship_view%'
+            namer: Vich\UploaderBundle\Naming\SmartUniqueNamer
+            delete_on_update: true
+            delete_on_remove: true
+        ship_images:
+            uri_prefix: '%ship_images%'
+            upload_destination: '%kernel.project_dir%/public%ship_images%'
+            namer: Vich\UploaderBundle\Naming\SmartUniqueNamer
+            delete_on_update: true
+            delete_on_remove: true
+        user_pp:
+            uri_prefix: '%user_pp%'
+            upload_destination: '%kernel.project_dir%/public%user_pp%'
+            namer: Vich\UploaderBundle\Naming\SmartUniqueNamer
+            delete_on_update: true 
+            delete_on_remove: true

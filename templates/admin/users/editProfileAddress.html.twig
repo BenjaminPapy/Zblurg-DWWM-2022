@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}EDIT ADDRESS{% endblock %}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/style-edit-profile.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/reset.css') }}">
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="edit-user-wrapper">
+            {{ form_start(usersForm, {'attr': {'class': 'edit-user-form'} }) }}
+                <h1>Edit your address</h1>
+                <span>
+                    {{ form_row(usersForm.planet,
+                        {'label': FALSE}) }}
+                </span>
+                <span>
+                    {{ form_row(usersForm.area,
+                        {'label': FALSE}) }}
+                </span>
+                <span>
+                    {{ form_row(usersForm.zipCode,
+                        {'label': FALSE}) }}
+                </span>
+                <span>
+                    {{ form_row(usersForm.city,
+                        {'label': FALSE}) }}
+                </span>
+                <input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}">
+
+                <button class="edit-btn1" type="submit">Validate</button>
+                <a class="edit-btn2" href="{{ path("app_users_profile") }}">Return to profile</a>
+            {{ form_end(usersForm) }}
+        </div>
+    </body>
+</html>

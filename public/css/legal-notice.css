@@ -1,0 +1,298 @@
+/* info_premium.html.twig (Iphone SE (375x667))*/
+
+.legals {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.headml {
+    margin-top: 10%;
+    margin-inline: 10%;
+    margin-bottom: 10%;
+}
+
+.headml h1 {
+    font-size: 2rem;
+    margin: 3%;
+    color: var(--text-icons);
+}
+
+.headml h1::first-letter {
+    color: var(--text-green);
+}
+
+.headml p {
+    font-size: 1.2rem;
+    line-height: 3.2vh;
+    color: var(--text-icons);
+}
+
+.denomination {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-inline: 10%;
+    margin-bottom: 10%;
+}
+
+.denomination h2 {
+    margin-top: 10%;
+}
+
+.denomination h2::first-letter {
+    color: var(--text-green);
+}
+
+.legals-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-inline: 10%;
+    margin-bottom: 5%;
+}
+
+.legals-content h2 {
+    margin-top: 10%;
+}
+
+
+.legals-content h2::first-letter {
+    color: var(--text-green);
+}
+
+.mention-title {
+    font-size: 1.8rem;
+    margin: 3%;
+    color: var(--text-icons);
+}
+
+.mention-texte {
+    font-size: 1.2rem;
+    line-height: 3.2vh;
+    color: var(--text-icons);
+}
+
+/* editProfile.html.twig (Iphone 13 max (428x926)) */
+@media (min-width: 428px) {
+
+}
+
+/* editProfile.html.twig (iPad (810x1080)) */
+@media (min-width: 810px) {
+
+    .headml {
+        margin-top: 5%;
+        margin-inline: 10%;
+        margin-bottom: 5%;
+    }
+
+    .denomination {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        margin-inline: 10%;
+        margin-bottom: 5%;
+    }
+
+    .legals-content {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        margin-inline: 10%;
+        margin-bottom: 3%;
+    }
+}
+
+/* editProfile.html.twig (iPad Pro(1024x1366)) */
+@media (min-width: 1024px) {
+
+    .headml {
+        margin-top: 5%;
+        margin-inline: 10%;
+        margin-bottom: 5%;
+    }
+
+    .denomination {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        margin-inline: 10%;
+        margin-bottom: 5%;
+    }
+    
+    .legals-content {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        margin-inline: 10%;
+        margin-bottom: 3%;
+    }
+}
+
+/* editProfile.html.twig (Laptop MDPI(1280x800)) */
+@media (min-width: 1280px) {
+
+    .headml {
+        margin-top: 2%;
+        margin-inline: 10%;
+        margin-bottom: 5%;
+    }
+
+    .denomination {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        margin-inline: 10%;
+        margin-bottom: 3%;
+    }
+
+    .legals-content {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        margin-inline: 10%;
+        margin-bottom: 1%;
+    }
+}
+
+/* editProfile.html.twig (Galaxy tab S7(1600x2560)) */
+@media (min-width: 1600px) {
+
+    .headml {
+        margin-top: 2%;
+        margin-inline: 10%;
+        margin-bottom: 5%;
+    }
+
+    .headml h1 {
+        font-size: 2.4rem;
+        margin: 3%;
+        color: var(--text-icons);
+    }
+
+    .headml p {
+        font-size: 1.4rem;
+        line-height: 1.5vh;
+        color: var(--text-icons);
+    }
+
+    .denomination {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        margin-inline: 10%;
+        margin-bottom: 3%;
+    }
+
+    .legals-content {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        margin-inline: 10%;
+        margin-bottom: 1%;
+    }
+
+    .mention-title {
+        font-size: 2.2rem;
+        margin: 3%;
+        color: var(--text-icons);
+    }
+
+    .mention-texte {
+        font-size: 1.4rem;
+        line-height: 1.5vh;
+        color: var(--text-icons);
+    }
+}
+
+/* editProfile.html.twig (PC (1920x1080)) */
+@media (min-width: 1920px) {
+
+    .headml {
+        margin-top: 2%;
+        margin-inline: 10%;
+        margin-bottom: 3%;
+    }
+
+    .headml h1 {
+        font-size: 2.5rem;
+        margin: 3%;
+        color: var(--text-icons);
+    }
+
+    .headml p {
+        font-size: 1.7rem;
+        line-height: 3vh;
+        color: var(--text-icons);
+    }
+
+    .denomination {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        margin-inline: 10%;
+        margin-bottom: 1%;
+    }
+
+    .legals-content {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        margin-inline: 10%;
+        margin-bottom: 0%;
+    }
+
+    .mention-title {
+        font-size: 2.3rem;
+        margin: 2%;
+        color: var(--text-icons);
+    }
+
+    .mention-texte {
+        font-size: 1.7rem;
+        line-height: 3vh;
+        color: var(--text-icons);
+    }
+}
+
+/* editProfile.html.twig (PC (2560x1440)) */
+@media (min-width: 2560px) {
+
+    .headml h1 {
+        font-size: 2.4rem;
+        margin: 3%;
+        color: var(--text-icons);
+    }
+
+    .headml p {
+        font-size: 1.6rem;
+        line-height: 3vh;
+        color: var(--text-icons);
+    }
+    .mention-title {
+        font-size: 2.2rem;
+        margin: 2%;
+        color: var(--text-icons);
+    }
+
+    .mention-texte {
+        font-size: 1.6rem;
+        line-height: 3vh;
+        color: var(--text-icons);
+    }
+}

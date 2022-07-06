@@ -1,0 +1,69 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <section class="premium-first-wrapper">
+        <div class="offer-wrapper">
+            <h1>Zblurg</h1>
+            <h2>Premium</h2>
+            <p>Enjoy an improved rental experience via Zblurg Premium for an attractive monthly cost. Zblurg Premium will offer you a superior choice of rental spaceship, as well as privileged access to our brand new Ionic models in partnership with Origin Jumpworks. Rest assured with the security provided by Premium Assistance, enjoy your referral code and much more!</p>
+            {% if not is_granted("ROLE_PREMIUM") %}
+                {% if not app.user %}
+                    <a class="offer-btn" href="{{ path("app_login") }}">Become premium</a>
+                {% else %}
+                    <a class="offer-btn" href="#info-popup">Become premium</a>
+                    <div id="info-popup" class="info-overlay">
+                        <div class="info-popup">
+                            {{ form_start(premiumForm) }}
+                                <a href="#" class="info-cross"><i class="fa-solid fa-xmark"></i></a>
+                                <h3>Become premium now</h3>
+                                <span class="info-form-check">
+                                    {{ form_row(premiumForm.roles,
+                                        {'label': FALSE}) }}
+                                </span>
+                                <input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}">
+
+                                <button class="info-popup-btn" type="submit">Confirm</button>
+                            {{ form_end(premiumForm) }}
+                        </div>
+                    </div>
+                {% endif %}
+            {% else %}
+                <p>You already have the premium status</p>
+            {% endif %}
+        </div>
+    </section>
+    <section class="premium-second-wrapper">
+        <div class="why-premium">
+            <div class="why-premium-title">
+                <h1>Why?</h1>
+            </div>
+            <ul>
+                <li>- Access to all our spaceships.</li>
+                <li>- Exclusive access to our new ionic models offered by Origin Jumworks.</li>
+                <li>- 24/24H 7/7D Premium Assistance service.</li>
+                <li>- Delivery anywhere for free.</li>
+                <li>- Referral code, more advantageous discount.</li>
+                <li>- Get 10% off on your next rental for your birthday (cumulative).</li>
+                <li>- Our Premium Assistance service at your disposal for your special requests.</li>
+            </ul>
+        </div>
+        <div class="premium-green-line"></div>
+    </section>
+    <section class="premium-third-wrapper">
+        <div class="premium-grid-wrapper">
+            <div class="premium-grid">
+                {% for ship in premiumShip %}
+                    {% if ship.premium %}
+                        {% include 'main/_card_premium.html.twig' with {ship: ship} only %}
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+
+{% block javascripts %}
+
+    <script src="../js/theme.js"></script>
+
+{% endblock %}
+{% endblock %}

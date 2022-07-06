@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}REGISTER{% endblock %}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/style-register.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/reset.css') }}">
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    </head>
+    <body class="body-register">
+        <div class="register-wrapper">
+            <div class="register-header">
+                <h1>Register</h1>
+            </div>
+            <div class="register-form">
+                {{ form_start(registrationForm) }}
+                    <span>
+                        {{ form_row(registrationForm.lastName,
+                            {'label': FALSE}) }}
+                    </span>
+                    <span>
+                        {{ form_row(registrationForm.firstName,
+                            {'label': FALSE}) }}
+                    </span>
+                    <span>
+                        {{ form_row(registrationForm.email,
+                            {'label': FALSE}) }}
+                    </span>
+                    <span class="register-password">
+                        {{ form_row(registrationForm.password,
+                            {'label': FALSE}) }}
+                    </span>
+                    <span class="register-rgpd">
+                        <p>Consent our<a href="legal_notice">rgpd</a></p>
+                        {{ form_row(registrationForm.RGPDConsent,
+                            {'label': FALSE}) }}
+                    </span>
+
+                    <input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}">
+
+                    {#
+                        Uncomment this section and add a remember_me option below your firewall to activate remember me functionality.
+                        See https://symfony.com/doc/current/security/remember_me.html
+
+                        <div class="checkbox mb-3">
+                            <label>
+                                <input type="checkbox" name="_remember_me"> Remember me
+                            </label>
+                        </div>
+                    #}
+
+                    <button class="register-in" type="submit">
+                        Register
+                    </button>
+                {{ form_end(registrationForm) }}
+
+                <a href="{{ path("homepage") }}" style="color: #202020;" >
+                    <button class="back-home-register">
+                        Back to homepage
+                    </button>
+                </a>
+            </div>
+        </div>
+
+        {#
+            Uncomment this section and add a remember_me option below your firewall to activate remember me functionality.
+            See https://symfony.com/doc/current/security/remember_me.html
+
+            <div class="checkbox mb-3">
+                <label>
+                    <input type="checkbox" name="_remember_me"> Remember me
+                </label>
+            </div>
+        #}
+
+    </body>
+</html>

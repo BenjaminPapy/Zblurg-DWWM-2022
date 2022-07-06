@@ -1,0 +1,154 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}My profile{% endblock %}
+
+{% block body %}
+<div class="body-profile">
+    <section class="profile-wrapper">
+        <ul class="navbar-list">
+            <li class="tab active" data-anim="1">Profile</li>
+            <li class="tab" data-anim="2">Contact</li>
+        </ul>
+        <div class="profile-content-wrapper">
+            <div class="content activeContent" data-anim="1">
+                <div class="profile-info">
+                    <div class="profile-info-row-premium">
+                        {% if is_granted("ROLE_PREMIUM") %}
+                            <p>You are premium</p>
+                        {% else %}
+                            <p>You are not premium</p>
+                        {% endif %}
+                        <a href="contact" class="profil-help-btn">Need help?</a>
+                        {% if is_granted("ROLE_ADMIN") %}
+                            <a href="/admin" class="profil-help-btn">Admin</a>
+                        {% endif %}
+                    </div>
+                    <div class="profile-info-row">
+                        <div class="profile-info-firstname">
+                            <h4>First Name :</h4>
+                            <p>{{ app.user.firstName }}</p>
+                        </div>
+                        <div class="profile-info-lastname">
+                            <h4>Last Name :</h4>
+                            <p>{{ app.user.lastName }}</p>
+                        </div>
+                        <div class="edit-profile-btn-box">
+                            <a class="edit-profile-btn" href="{{ path("app_users_edit_name") }}">Edit name</a>
+                        </div>
+                    </div>
+                    <div class="profile-info-row">
+                        <div class="profile-info-email">
+                            <h4>Email :</h4>
+                            <p>{{ app.user.email }}</p>
+                        </div>
+                        <div class="edit-profile-btn-box">
+                            <a class="edit-profile-btn" href="{{ path("app_users_edit_email") }}">Edit email</a>
+                        </div>
+                    </div>
+                    <div class="profile-info-row">
+                        <div class="profile-info-phone">
+                            <h4>Phone number :</h4>
+                            {% if app.user.phoneNumber is null %}
+                            <p>not specified<p>
+                            {% else %}
+                            <p>{{ app.user.phoneNumber }}</p>
+                            {% endif %}
+                        </div>
+                        <div class="edit-profile-phone-btn-box">
+                            <a class="edit-profile-btn" href="{{ path("app_users_edit_phone") }}">Edit phone number</a>
+                        </div>
+                    </div>
+                    <div class="edit-profile-password-btn-box">
+                        <a class="edit-profile-btn" href="{{ path("app_users_edit_password") }}">Edit password</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content" data-anim="2">
+                <div class="profile-contact">
+                    <div class="profile-contact-row1">
+                        <div class="profile-contact-first">
+                            <h4>Planet :</h4>
+                            {% if app.user.planet is null %}
+                                <p class="profile-contact-p">not specified<p>
+                            {% else %}
+                                {% apply inline_css %}
+                                    <style> .p-is-defined { padding: 6% } </style>
+                                    <p class="p-is-defined">{{ app.user.planet }}</p>
+                                {% endapply %}
+                            {% endif %}
+                        </div>
+                        <div class="profile-contact-second">
+                            <h4>Area :</h4>
+                            {% if app.user.area is null %}
+                                <p class="profile-contact-p">not specified<p>
+                            {% else %}
+                                <p class="p-is-defined">{{ app.user.area }}</p>
+                            {% endif %}
+                        </div>
+                    </div>
+                    <div class="profile-contact-row2">
+                        <div class="profile-contact-first">
+                            <h4>Zip code :</h4>
+                            {% if app.user.zipcode is null %}
+                                <p class="profile-contact-p">not specified<p>
+                            {% else %}
+                                <p class="p-is-defined">{{ app.user.zipcode }}</p>
+                            {% endif %}
+                        </div>
+                        <div class="profile-contact-second">
+                            <h4>City :</h4>
+                            {% if app.user.city is null %}
+                                <p class="profile-contact-p">not specified<p>
+                            {% else %}
+                                <p class="p-is-defined">{{ app.user.city }}</p>
+                            {% endif %}
+                        </div>
+                    </div>
+                    <div class="edit-content-btn-box">
+                        <a class="edit-profile-btn" href="{{ path("app_users_edit_address") }}">Edit address</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+{% block javascripts %}
+    <script type="text/javascript">
+        const tabs = document.querySelectorAll('.tab');
+        const content = document.querySelectorAll('.content');
+        let index = 0;
+
+        tabs.forEach(tab => {
+
+            tab.addEventListener('click', () => {
+                if (tab.classList.contains('active')) {
+                    return;
+                } else {
+                    tab.classList.add('active');
+                }
+
+                index = tab.getAttribute('data-anim');
+                
+                for(i = 0; i < tabs.length; i++) {
+                    if(tabs[i].getAttribute('data-anim')
+                    != index) {
+                        tabs[i].classList.remove('active');
+                    }
+                }
+
+                for(j = 0; j < content.length; j++) {
+                    if(content[j].getAttribute('data-anim') == index) {
+                        content[j].classList.add('activeContent');
+                    } else {
+                        content[j].classList.remove('activeContent');
+                    }
+                }
+            })
+        })
+    </script>
+
+    <script src="./js/theme.js"></script>
+    
+{% endblock %}
+{% endblock %}

@@ -1,0 +1,1725 @@
+/* show.html.twig (Iphone SE (375x667))*/
+
+.show-first-wrapper {
+    display: flex;
+    justify-content: center;
+    height: 500px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    border-bottom: 3px solid var(--fourth-background);
+}
+
+.show-title-wrapper {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    background-color: rgba(0,0,0,0.25);
+    cursor: default;
+}
+
+.show-text-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    left: 15%;
+    padding-bottom: 0.5%;
+    text-transform: uppercase;
+    color: var(--third-background);
+}
+
+.show-first-wrapper h1 {
+    font-size: 2rem;
+    color: var(--text-light);
+}
+
+.show-first-wrapper h2 {
+    position: relative;
+    margin-top: 1%;
+    font-size: 1.5rem;
+}
+
+.show-first-wrapper h3 {
+    margin-top: 1%;
+    font-size: 1.3rem;
+}
+
+.show-second-wrapper {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    padding-bottom: 5%;
+    color: var(--text-icons);
+    cursor: default;
+}
+
+.second-title-box {
+    position: relative;
+    display: flex;
+    width: 80%;
+    left: 15%;
+    color: var(--text-icons);
+}
+
+.show-second-wrapper h2 {
+    font-size: 1.5rem;
+    padding-right: 1%;
+}
+
+.show-second-wrapper img {
+    position: relative;
+    display: flex;
+    height: 9%;
+    width: 9%;
+    left: 1%;
+}
+
+.ship-description {
+    display: flex;
+    align-items: center;
+    padding-inline: 10%;
+    padding-bottom: 4%;
+    font-size: 1.3rem;
+    line-height: 4.5vh;
+    cursor: default;
+    color: var(--text-icons);
+}
+
+
+
+
+
+
+.rent-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.rent-wrapper h3 {
+    margin-left: 15%;
+    color: var(--text-green);
+}
+
+.show-popup-btn {
+    font-family: 'made_evolve_sans_evoregular';
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    left: 10%;
+    height: 2vh;
+    width: 45vw;
+    font-size: 1rem;
+    color: var(--text-icons);
+    border-radius: 15px;
+    border: 2px solid var(--text-icons);
+    text-decoration: none;
+    cursor: pointer;
+    background: var(--first-background);
+    box-shadow:  5px 5px 10px var(--first-shadow-first-background),
+                 -5px -5px 10px var(--second-shadow-first-background);
+}
+
+.show-popup-btn:hover {
+    box-shadow: inset 5px 5px 10px var(--first-shadow-first-background),
+                inset -5px -5px 10px var(--second-shadow-first-background);
+    border: 2px solid var(--text-green);
+    transition: all 0.2s ease-out;
+}
+
+.show-popup-btn:hover .fa-cart-shopping {
+    transition: all 0.3s ease-out;
+    color: var(--text-green);
+}
+
+.fa-cart-shopping {
+    font-size: 1.1rem;
+    color: var(--text-icons);
+    margin-right: 2%;
+}
+
+
+
+
+
+.show-overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.7);
+    transition: opacity .4s;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 2;
+}
+
+.show-overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.show-popup {
+    font-family: 'made_evolve_sans_evoregular';
+    position: fixed;
+    background: var(--fourth-background);
+    height: 200px;
+    width: 250px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid var(--first-background);
+    border-radius: 15px;
+}
+
+.show-cross {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3vh;
+    width: 7vw;
+    top: 3%;
+    left: 89.5%;
+    color: var(--text-green);
+}
+
+.fa-xmark {
+    height: 100%;
+    width: 100%;
+    font-size: 3.5vh;
+}
+
+.show-popup h3 {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    top: 20%;
+    cursor: default;
+    color: var(--text-icons);
+    font-size: 1.4rem;
+}
+
+.show-popup p {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 100%;
+    color: var(--text-icons);
+    font-size: 1.1rem;
+}
+
+.ship-rent-btn {
+    font-family: 'made_evolve_sans_evoregular';
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6vh;
+    width: 40vw;
+    left: 50%;
+    bottom: 0%;
+    transform: translate(-50%);
+    font-size: 1.1rem;
+    color: var(--text-icons);
+    border-radius: 15px;
+    border: none;
+    margin-bottom: 10%;
+    background: var(--fourth-background);
+    box-shadow:  5px 5px 10px var(--first-shadow-fourth-background),
+                -5px -5px 10px var(--second-shadow-fourth-background);
+    transition: all 0.3s ease-out;
+    cursor: pointer;
+}
+
+.ship-rent-btn:hover {
+    box-shadow: inset 5px 5px 10px var(--first-shadow-fourth-background),
+                inset -5px -5px 10px var(--second-shadow-fourth-background);
+                color: var(--text-green);
+}
+
+
+
+
+
+
+
+
+
+.show-fifth-wrapper {
+    display: flex;
+    flex-direction: column;
+    background: var(--third-background);
+    border: 3px solid var(--border);
+    border-radius: 15px;
+    margin-inline: 2%;
+    cursor: default;
+    color: var(--text-light);
+}
+
+.show-ship-info {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.ship-measure {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 5%;
+}
+
+.ship-measure h3 {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    line-height: 50px;
+    color: var(--text-icons);
+}
+
+.ship-structure {
+    display: flex;
+    flex-direction: column;
+}
+
+.ship-structure h3 {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    line-height: 50px;
+    color: var(--text-icons);
+}
+
+.model-block-content {
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+    line-height: 50px;
+    color: var(--text-icons);
+}
+
+.model-block-content h4 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.model-block-content p {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 2%;
+}
+
+/* slider show start */
+
+.show-fourth-wrapper {
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+    height: 130vh;
+    overflow: hidden;
+    background: var(--fourth-background);
+    border-top: solid 3px var(--border);
+    margin-top: 5%;
+}
+
+.show-slider {
+    display: flex;
+    align-items: center;
+    height: 20vh;
+    transform: translateX(0);
+    transition: transform 0.3s ease-out;
+    cursor: grab;
+    background: var(--fourth-background);
+    margin-top: 3vh;
+    margin-bottom: 1vh;
+}
+
+.show-slider input[name="radio-btn"] {
+    position: absolute;
+    visibility: hidden;
+}
+
+.show-slide {
+    position: relative;
+    max-height: 30vh;
+    width: 90vw;
+    user-select: none;
+    transition: 0.6s;
+    margin-right: 10%;
+    left: 5%;
+}
+
+.show-slide img {
+    height: 20vh;
+    width: 90vw;
+    transition: transform 0.3s ease-in-out;
+}
+
+.grabbing {
+    cursor: grabbing;
+}
+
+.grabbing .show-slide img {
+    transform: scale(0.9);
+}
+
+/* css for manual slide nav*/
+
+.show-slider-nav {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
+.btn-nav-show {
+    display: flex;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.5);
+    height: 20px;
+    width: 20px;
+    margin: 1%;
+    margin-inline: 1.75vh;
+    border-radius: 50%;
+    border: 2px solid var(--header-footer);
+}
+
+/* show.html.twig (Iphone 13 max (428x926)) */
+@media (min-width: 428px) {
+    
+    .show-first-wrapper h1 {
+        font-size: 2.3rem;
+    }
+    
+    .show-first-wrapper h2 {
+        position: relative;
+        margin-top: 1%;
+        font-size: 1.8rem;
+    }
+
+    .show-first-wrapper h3 {
+        margin-top: 1%;
+        font-size: 1.4rem;
+    }
+
+    .show-second-wrapper {
+        position: relative;
+        display: flex;
+        align-items: center;
+        font-size: 1.7rem;
+        padding-bottom: 5%;
+    }
+    
+    .show-second-wrapper h2 {
+        font-size: 1.7rem;
+        padding-right: 1%;
+    }
+
+
+
+
+
+
+
+
+    .show-popup-btn {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        left: 10%;
+        height: 2vh;
+        width: 45vw;
+        font-size: 1.05rem;
+        border-radius: 15px;
+        text-decoration: none;
+    }
+
+    .fa-cart-shopping {
+        font-size: 1.2rem;
+        margin-right: 2%;
+    }
+
+
+
+
+    
+    .show-popup {
+        position: fixed;
+        height: 300px;
+        width: 275px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 15px;
+    }
+    
+    .show-cross {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 2.5vh;
+        width: 7vw;
+        top: 2.5%;
+        left: 89.25%;
+    }
+    
+    .fa-xmark {
+        font-size: 3vh;
+    }
+    
+    .show-popup h3 {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        top: 20%;
+        font-size: 1.5rem;
+    }
+    
+    .show-popup p {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%);
+        width: 100%;
+        font-size: 1.1rem;
+    }
+    
+    .ship-rent-btn {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 5vh;
+        width: 40vw;
+        left: 50%;
+        bottom: 0%;
+        transform: translate(-50%);
+        font-size: 1.2rem;
+        border-radius: 15px;
+        border: none;
+        margin-bottom: 10%;
+        transition: all 0.3s ease-out;
+    }
+
+
+
+
+
+
+
+
+    .ship-measure h3 {
+        display: flex;
+        justify-content: center;
+        font-size: 1.8rem;
+        line-height: 50px;
+    }
+
+    .model-block-content {
+        display: flex;
+        justify-content: center;
+        font-size: 1.4rem;
+        line-height: 50px;
+    }
+
+    .ship-structure h3 {
+        display: flex;
+        justify-content: center;
+        font-size: 1.8rem;
+        line-height: 50px;
+    }
+
+    /* slider show start */
+
+    .show-fourth-wrapper {
+        align-items: center;
+        flex-direction: row;
+        position: relative;
+        height: 100vh;
+        overflow: hidden;
+        margin-top: 5%;
+    }
+
+    .show-slider {
+        display: flex;
+        align-items: center;
+        height: 20vh;
+        transform: translateX(0);
+        transition: transform 0.3s ease-out;
+        cursor: grab;
+        margin-top: 1.5vh;
+        margin-bottom: 0vh;
+    }
+
+    .show-slide img {
+        height: 18vh;
+        width: 90vw;
+        transition: transform 0.3s ease-in-out;
+    }
+}
+
+/* show.html.twig (iPad (810x1080)) */
+@media (min-width: 810px) {
+
+    .show-first-wrapper h1 {
+        font-size: 2.5rem;
+    }
+    
+    .show-first-wrapper h2 {
+        position: relative;
+        margin-top: 1%;
+        font-size: 2rem;
+    }
+
+    .show-first-wrapper h3 {
+        margin-top: 1%;
+        font-size: 1.6rem;
+    }
+
+    .show-second-wrapper {
+        position: relative;
+        display: flex;
+        align-items: center;
+        font-size: 1.9rem;
+        padding-bottom: 5%;
+    }
+    
+    .show-second-wrapper h2 {
+        font-size: 1.9rem;
+        padding-right: 1%;
+    }
+
+    .show-second-wrapper img {
+        position: relative;
+        display: flex;
+        height: 6%;
+        width: 6%;
+        left: 1%;
+    }
+
+    .ship-description {
+        display: flex;
+        align-items: center;
+        padding-inline: 10%;
+        padding-bottom: 4%;
+        font-size: 1.4rem;
+        line-height: 4.5vh;
+    }
+
+
+
+
+
+
+
+
+
+    .rent-wrapper h3 {
+        margin-left: 15%;
+        font-size: 1.2rem;
+    }
+
+    .show-popup-btn {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        left: 10%;
+        height: 2vh;
+        width: 25vw;
+        font-size: 1.2rem;
+        border-radius: 15px;
+        text-decoration: none;
+    }
+
+    .fa-cart-shopping {
+        font-size: 1.3rem;
+        margin-right: 3%;
+    }
+
+
+
+
+    
+    .show-popup {
+        position: fixed;
+        height: 400px;
+        width: 350px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 15px;
+    }
+    
+    .show-cross {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 2.3vh;
+        width: 4.5vw;
+        top: 2.5%;
+        left: 90%;
+    }
+    
+    .fa-xmark {
+        font-size: 2.75vh;
+    }
+    
+    .show-popup h3 {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        top: 20%;
+        font-size: 1.8rem;
+    }
+    
+    .show-popup p {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%);
+        width: 100%;
+        font-size: 1.3rem;
+    }
+    
+    .ship-rent-btn {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 5vh;
+        width: 30vw;
+        left: 50%;
+        bottom: 0%;
+        transform: translate(-50%);
+        font-size: 1.2rem;
+        border-radius: 15px;
+        border: none;
+        margin-bottom: 15%;
+        transition: all 0.3s ease-out;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .ship-measure h3 {
+        display: flex;
+        justify-content: center;
+        font-size: 1.9rem;
+        line-height: 50px;
+    }
+
+    .ship-structure h3 {
+        display: flex;
+        justify-content: center;
+        font-size: 1.9rem;
+        line-height: 50px;
+    }
+
+    /* slider show start */
+
+    .show-slider {
+        display: flex;
+        align-items: center;
+        height: 25vh;
+        transform: translateX(0);
+        transition: transform 0.3s ease-out;
+        cursor: grab;
+        margin-top: 3.75vh;
+        margin-bottom: 1vh;
+    }
+
+    .show-slide img {
+        height: 25vh;
+        width: 90vw;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    /* css for manual slide nav*/
+
+    .show-slider-nav {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 3%;
+    }
+}
+
+/* show.html.twig (iPad Pro(1024x1366)) */
+@media (min-width: 1024px) {
+
+    .show-first-wrapper h1 {
+        font-size: 2.8rem;
+    }
+    
+    .show-first-wrapper h2 {
+        position: relative;
+        margin-top: 1%;
+        font-size: 2.3rem;
+    }
+
+    .show-first-wrapper h3 {
+        margin-top: 1%;
+        font-size: 1.8rem;
+    }
+
+    .show-second-wrapper {
+        position: relative;
+        display: flex;
+        align-items: center;
+        font-size: 2.2rem;
+        padding-bottom: 5%;
+    }
+    
+    .show-second-wrapper h2 {
+        font-size: 2.2rem;
+        padding-right: 1%;
+    }
+
+    .ship-description {
+        display: flex;
+        align-items: center;
+        padding-inline: 10%;
+        padding-bottom: 4%;
+        font-size: 1.5rem;
+        line-height: 4.5vh;
+    }
+
+
+
+
+
+
+
+    .rent-wrapper h3 {
+        margin-left: 15%;
+        font-size: 1.3rem;
+    }
+
+    .show-popup-btn {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        left: 10%;
+        height: 2vh;
+        width: 25vw;
+        font-size: 1.2rem;
+        border-radius: 15px;
+        text-decoration: none;
+    }
+
+    .fa-cart-shopping {
+        font-size: 1.4rem;
+        margin-right: 3%;
+    }
+
+
+
+
+    
+    .show-popup {
+        position: fixed;
+        height: 450px;
+        width: 450px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 15px;
+    }
+    
+    .show-cross {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 2.3vh;
+        width: 3.5vw;
+        top: 2%;
+        left: 91.75%;
+    }
+    
+    .fa-xmark {
+        font-size: 2.5vh;
+    }
+    
+    .show-popup h3 {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        top: 20%;
+        font-size: 1.9rem;
+    }
+    
+    .show-popup p {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%);
+        width: 100%;
+        font-size: 1.3rem;
+    }
+    
+    .ship-rent-btn {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 5vh;
+        width: 27vw;
+        left: 50%;
+        bottom: 0%;
+        transform: translate(-50%);
+        font-size: 1.32rem;
+        border-radius: 15px;
+        border: none;
+        margin-bottom: 15%;
+        transition: all 0.3s ease-out;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    .ship-measure h3 {
+        display: flex;
+        justify-content: center;
+        font-size: 2.2rem;
+        line-height: 50px;
+    }
+
+    .ship-structure h3 {
+        display: flex;
+        justify-content: center;
+        font-size: 2.2rem;
+        line-height: 50px;
+    }
+
+    .model-block-content {
+        display: flex;
+        justify-content: center;
+        font-size: 1.6rem;
+        line-height: 50px;
+    }
+
+    /* slider show start */
+
+    .show-fourth-wrapper {
+        align-items: center;
+        flex-direction: row;
+        position: relative;
+        height: 88vh;
+        overflow: hidden;
+        margin-top: 5%;
+    }
+}
+
+/* show.html.twig(Laptop MDPI(1280x800)) */
+@media (min-width: 1280px) {
+
+    .show-second-wrapper img {
+        position: relative;
+        display: flex;
+        height: 5%;
+        width: 5%;
+        left: 1%;
+    }
+
+
+
+
+
+
+
+
+
+
+    .show-popup-btn {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        left: 10%;
+        height: 3vh;
+        width: 20vw;
+        font-size: 1.2rem;
+        border-radius: 15px;
+        text-decoration: none;
+    }
+
+    .fa-cart-shopping {
+        font-size: 1.3rem;
+        margin-right: 3%;
+    }
+
+
+
+
+    
+    .show-popup {
+        position: fixed;
+        height: 450px;
+        width: 400px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 15px;
+    }
+    
+    .show-cross {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 3.2vh;
+        width: 3vw;
+        top: 2.5%;
+        left: 90%;
+    }
+    
+    .fa-xmark {
+        font-size: 4vh;
+    }
+    
+    .show-popup h3 {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        top: 20%;
+        font-size: 1.9rem;
+    }
+    
+    .show-popup p {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%);
+        width: 100%;
+        font-size: 1.3rem;
+    }
+    
+    .ship-rent-btn {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 8vh;
+        width: 18vw;
+        left: 50%;
+        bottom: 0%;
+        transform: translate(-50%);
+        font-size: 1.4rem;
+        border-radius: 15px;
+        border: none;
+        margin-bottom: 15%;
+        transition: all 0.3s ease-out;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    /* slider show start */
+
+    .show-fourth-wrapper {
+        align-items: center;
+        flex-direction: row;
+        position: relative;
+        height: 163vh;
+        overflow: hidden;
+        margin-top: 5%;
+    }
+
+    .show-slider {
+        display: flex;
+        align-items: center;
+        height: 55vh;
+        transform: translateX(0);
+        transition: transform 0.3s ease-out;
+        cursor: grab;
+        margin-top: 3.75vh;
+        margin-bottom: 1vh;
+    }
+
+    .show-slide {
+        position: relative;
+        max-height: 55vh;
+        width: 90vw;
+        user-select: none;
+        transition: 0.6s;
+        margin-right: 10%;
+        left: 5%;
+    }
+
+    .show-slide img {
+        height: 55vh;
+        width: 90vw;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    /* css for manual slide nav*/
+
+
+    .show-slider-nav {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2%;
+    }
+
+    .btn-nav-show {
+        display: flex;
+        justify-content: center;
+        background: rgba(255, 255, 255, 0.5);
+        height: 20px;
+        width: 20px;
+        margin: 1%;
+        margin-inline: 3vh;
+        border-radius: 50%;
+    }
+}
+
+/* show.html.twig (Galaxy tab S7(1600x2560)) */
+@media (min-width: 1600px) {
+
+    .show-first-wrapper {
+        display: flex;
+        justify-content: center;
+        height: 650px;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+    }
+
+    .show-first-wrapper h1 {
+        font-size: 2.8rem;
+    }
+    
+    .show-first-wrapper h2 {
+        position: relative;
+        margin-top: 1%;
+        font-size: 2.3rem;
+    }
+
+    .show-first-wrapper h3 {
+        margin-top: 1%;
+        font-size: 1.8rem;
+    }
+
+
+
+    .show-second-wrapper {
+        position: relative;
+        display: flex;
+        align-items: center;
+        font-size: 2.2rem;
+        padding-bottom: 5%;
+    }
+    
+    .show-second-wrapper h2 {
+        font-size: 2.2rem;
+        padding-right: 1%;
+    }
+
+    .show-second-wrapper img {
+        position: relative;
+        display: flex;
+        height: 3%;
+        width: 3%;
+        left: 1%;
+    }
+
+    .ship-description {
+        display: flex;
+        align-items: center;
+        padding-inline: 5%;
+        font-size: 1.6rem;
+        line-height: 2vh;
+    }
+
+
+
+
+
+
+
+
+
+    .rent-wrapper h3 {
+        margin-left: 13%;
+        font-size: 1.4rem;
+    }
+
+    .show-popup-btn {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        left: 10%;
+        height: 2vh;
+        width: 20vw;
+        font-size: 1.4rem;
+        border-radius: 15px;
+        text-decoration: none;
+    }
+
+    .fa-cart-shopping {
+        font-size: 1.5rem;
+        margin-right: 3%;
+    }
+
+
+
+
+    
+    .show-popup {
+        position: fixed;
+        height: 500px;
+        width: 500px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 15px;
+    }
+    
+    .show-cross {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 1.5vh;
+        width: 3vw;
+        top: 2%;
+        left: 91%;
+    }
+    
+    .fa-xmark {
+        font-size: 1.6vh;
+    }
+    
+    .show-popup h3 {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        top: 20%;
+        font-size: 2.2rem;
+    }
+    
+    .show-popup p {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%);
+        width: 100%;
+        font-size: 1.5rem;
+    }
+    
+    .ship-rent-btn {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 3vh;
+        width: 15vw;
+        left: 50%;
+        bottom: 0%;
+        transform: translate(-50%);
+        font-size: 1.35rem;
+        border-radius: 15px;
+        border: none;
+        margin-bottom: 15%;
+        transition: all 0.3s ease-out;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .show-ship-info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        height: auto;
+        width: 100%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+
+    .ship-measure {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2%;
+        width: 50%;
+    }
+
+    .ship-measure h3 {
+        display: flex;
+        justify-content: center;
+        font-size: 2.3rem;
+        line-height: 50px;
+        margin-bottom: 2%;
+    }
+
+    .ship-structure {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+
+    .ship-structure h3 {
+        display: flex;
+        justify-content: center;
+        font-size: 2.3rem;
+        line-height: 50px;
+        margin-bottom: 2%;
+    }
+
+    .model-block-content {
+        display: flex;
+        justify-content: center;
+        font-size: 1.6rem;
+        line-height: 2vh;
+    }
+
+    /* slider show start */
+
+    .show-fourth-wrapper {
+        align-items: center;
+        flex-direction: row;
+        position: relative;
+        height: 47vh;
+        overflow: hidden;
+        margin-top: 5%;
+    }
+
+    .show-slider {
+        display: flex;
+        align-items: center;
+        height: 23vh;
+        transform: translateX(0);
+        transition: transform 0.3s ease-out;
+        cursor: grab;
+        margin-top: 2.5vh;
+        margin-bottom: 0.5vh;
+    }
+
+    .show-slide {
+        position: relative;
+        max-height: 30vh;
+        width: 90vw;
+        user-select: none;
+        transition: 0.6s;
+        margin-right: 10%;
+        left: 5%;
+    }
+
+    .show-slide img {
+        height: 23vh;
+        width: 90vw;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    /* css for manual slide nav*/
+
+    .btn-nav-show {
+        display: flex;
+        justify-content: center;
+        height: 20px;
+        width: 20px;
+        margin: 1%;
+        margin-inline: 2vh;
+        border-radius: 50%;
+    }
+}
+
+/* show.html.twig (PC (1920x1080)) */
+@media (min-width: 1920px) {
+
+    .show-first-wrapper {
+        display: flex;
+        justify-content: center;
+        height: 500px;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+    }
+
+    .show-first-wrapper h1 {
+        font-size: 3.3rem;
+    }
+    
+    .show-first-wrapper h2 {
+        position: relative;
+        margin-top: 1%;
+        font-size: 2.8rem;
+    }
+
+    .show-first-wrapper h3 {
+        margin-top: 1%;
+        font-size: 2rem;
+    }
+
+
+    .show-second-wrapper {
+        position: relative;
+        display: flex;
+        align-items: center;
+        font-size: 2.6rem;
+        padding-bottom: 5%;
+    }
+    
+    .show-second-wrapper h2 {
+        font-size: 2.6rem;
+        padding-right: 1%;
+    }
+
+
+
+
+
+
+
+    .rent-wrapper h3 {
+        margin-left: 12%;
+        font-size: 1.4rem;
+    }
+
+    .show-popup-btn {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        left: 10%;
+        height: 2vh;
+        width: 15vw;
+        font-size: 1.3rem;
+        border-radius: 15px;
+        text-decoration: none;
+    }
+
+    .fa-cart-shopping {
+        font-size: 1.4rem;
+        margin-right: 2%;
+    }
+
+
+
+
+    
+    .show-popup {
+        position: fixed;
+        height: 500px;
+        width: 500px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 15px;
+    }
+    
+    .show-cross {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 3vh;
+        width: 2vw;
+        top: 2%;
+        left: 92.5%;
+    }
+    
+    .fa-xmark {
+        font-size: 3vh;
+    }
+    
+    .show-popup h3 {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        top: 20%;
+        font-size: 2.2rem;
+    }
+    
+    .show-popup p {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%);
+        width: 100%;
+        font-size: 1.5rem;
+    }
+    
+    .ship-rent-btn {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 6vh;
+        width: 15vw;
+        left: 50%;
+        bottom: 0%;
+        transform: translate(-50%);
+        font-size: 1.35rem;
+        border-radius: 15px;
+        border: none;
+        margin-bottom: 15%;
+        transition: all 0.3s ease-out;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    .model-block-content {
+        display: flex;
+        justify-content: center;
+        font-size: 1.6rem;
+        line-height: 4vh;
+    }
+
+    /* slider show start */
+
+    .show-fourth-wrapper {
+        align-items: center;
+        flex-direction: row;
+        position: relative;
+        height: 115vh;
+        overflow: hidden;
+        margin-top: 5%;
+    }
+
+    .show-slider {
+        display: flex;
+        align-items: center;
+        height: 55vh;
+        transform: translateX(0);
+        transition: transform 0.3s ease-out;
+        cursor: default;
+        margin-top: 8vh;
+        margin-bottom: 1vh;
+    }
+
+    .grabbing {
+        cursor: default;
+    }
+
+    .show-slide {
+        position: relative;
+        max-height: 60vh;
+        width: 90vw;
+        user-select: none;
+        transition: 0.6s;
+        margin-right: 10%;
+        left: 5%;
+    }
+
+    .show-slide img {
+        height: 55vh;
+        width: 90vw;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    /* css for manual slide nav*/
+    
+    .btn-nav-show {
+        display: flex;
+        justify-content: center;
+        height: 20px;
+        width: 20px;
+        margin: 1%;
+        margin-inline: 4vh;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    .btn-nav-show.show-active {
+        box-shadow: 0 0 2px rgba(0,0,0,1);
+        background: var(--text-green);
+        transition: 0.5s;
+    }
+
+    #radio1:checked ~ .s1 {
+    margin-left: 0;
+    }
+
+    #radio2:checked ~ .s1 {
+        margin-left: -100%;
+    }
+
+    #radio3:checked ~ .s1 {
+        margin-left: -200%;
+    }
+
+    #radio4:checked ~ .s1 {
+        margin-left: -300%;
+    }
+}
+
+/* show.html.twig (PC (2560x1440)) */
+@media (min-width: 2560px) {
+
+    .show-popup-btn {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        left: 10%;
+        height: 2vh;
+        width: 15vw;
+        font-size: 1.35rem;
+        border-radius: 15px;
+        text-decoration: none;
+    }
+
+    .fa-cart-shopping {
+        font-size: 1.45rem;
+        margin-right: 2%;
+    }
+
+
+
+
+    
+    .show-popup {
+        position: fixed;
+        height: 500px;
+        width: 500px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 15px;
+    }
+    
+    .show-cross {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 2.2vh;
+        width: 1.75vw;
+        top: 2%;
+        left: 91.5%;
+    }
+    
+    .fa-xmark {
+        font-size: 2.5vh;
+    }
+    
+    .show-popup h3 {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        top: 20%;
+        font-size: 2.2rem;
+    }
+    
+    .show-popup p {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%);
+        width: 100%;
+        font-size: 1.5rem;
+    }
+    
+    .ship-rent-btn {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 5vh;
+        width: 10vw;
+        left: 50%;
+        bottom: 0%;
+        transform: translate(-50%);
+        font-size: 1.35rem;
+        border-radius: 15px;
+        border: none;
+        margin-bottom: 15%;
+        transition: all 0.3s ease-out;
+    }
+}

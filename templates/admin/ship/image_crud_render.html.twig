@@ -1,0 +1,8 @@
+{{ dump() }}
+<div class="form-widget">
+    {% for images in field.value %}
+        <div id="images-{{images.id}}">
+            <img src="{{ vich_uploader_asset(images, 'imagesFile') }}"/>
+        </div>
+    {% endfor %}
+</div>

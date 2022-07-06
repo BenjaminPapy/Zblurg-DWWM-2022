@@ -1,0 +1,29 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Error 404{% endblock %}
+
+{% block head %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/reset.css') }}">
+    <script src="https://kit.fontawesome.com/26bd733b9b.js" crossorigin="anonymous"></script>
+</head>
+{% endblock %}
+{% block body %}
+    <body>
+        <section class="error-wrapper">
+            <img class="error-image" src="/images/Page-404.png" alt="Error-404">
+            <h1 class="error-title">Oops..</h1>
+            <h2 class="error-second-title">It seems that what you are looking for can't be found</h2>
+            <a href="/" class="error-btn-home">Return to the homepage</a>
+        </section>
+    </body>
+
+{% block javascripts %}
+
+    <script src="/js/theme.js"></script> 
+
+{% endblock %}
+{% endblock %}

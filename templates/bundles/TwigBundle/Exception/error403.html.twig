@@ -1,0 +1,29 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Error 403{% endblock %}
+
+{% block head %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/reset.css') }}">
+    <script src="https://kit.fontawesome.com/26bd733b9b.js" crossorigin="anonymous"></script>
+</head>
+{% endblock %}
+{% block body %}
+    <body>
+        <section class="error-wrapper">
+            <img class="error-image" src="/images/Page-403.png" alt="Error-403">
+            <h1 class="error-title">We are sorry</h1>
+            <h2 class="error-second-title">It seems that the page you're trying to access is restricted</h2>
+            <a href="/" class="error-btn-home">Return to the homepage</a>
+        </section>
+    </body>
+
+{% block javascripts %}
+
+    <script src="/js/theme.js"></script>
+
+{% endblock %}
+{% endblock %}

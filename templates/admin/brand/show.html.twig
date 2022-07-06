@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ brand.name }}{% endblock %}
+
+{% block body %}
+    <div class="main-content">
+        <div class="first-wrapper">
+            <div class="model-block-content">
+                <h4>Id</h4>
+                <p>{{ brand.id }}<p>
+            </div>
+            <div class="model-block-content">
+                <h4>Type</h4>
+                <p>{{ brand.name }}<p>
+            </div>
+            <div class="model-block-content">
+                <h4>Logo</h4>
+                <!-- logo? -->
+            </div>
+        </div>
+    </div>
+    <a href="{{ path('admin_brand_index') }}">back to list</a>
+
+    <a href="{{ path('admin_brand_edit', {'id': brand.id}) }}">edit</a>
+
+    {{ include('admin/brand/_delete_form.html.twig') }}
+{% endblock %}

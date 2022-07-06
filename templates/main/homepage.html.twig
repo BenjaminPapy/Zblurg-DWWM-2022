@@ -1,0 +1,172 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <section class="home-first-wrapper">
+        <h1>Welcome to Zblurg</h1>
+    </section>  
+    <section class="home-second-wrapper">
+        <section class="slider-wrapper">
+            <div class="home-slider">
+                <div class="slide active">
+                    <a href="{{ path("premium_info") }}">
+                        <img src="/images/slider_1.png" alt="">
+                        <div class="home-slide-info">
+                            <h2>Zblurg Premium</h2>
+                            <p>Discover the benefits of our premium status.<p>
+                        </div>
+                    </a>
+                </div>
+                <div class="slide">
+                    <a href="{{ path("premium_info") }}">
+                        <img src="/images/slider_2.png" alt="">
+                        <div class="home-slide-info">
+                            <h2>We’ll deliver you anywhere!</h2>
+                            <p>With premium Zblurg, receive your spaceship anywhere!</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="slide">
+                    <a href="{{ path("contact") }}">
+                        <img src="/images/slider_3.png" alt="">
+                        <div class="home-slide-info">
+                            <h2>Discount during summer holidays</h2>
+                            <p>Take advantage of our 15% discount during the summer holidays from Port Olisar</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="slide">
+                    <a href="{{ path("premium_info") }}">
+                        <img src="/images/slider_4.png" alt="">
+                        <div class="home-slide-info">
+                            <h2>Need more power?</h2>
+                            <p>Try our brand new Ionic model in partnership with Origin jumpworks.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="home-slider-nav">
+                    <div class="btn-nav-home active"></div>
+                    <div class="btn-nav-home"></div>
+                    <div class="btn-nav-home"></div>
+                    <div class="btn-nav-home"></div>
+                </div>
+            </div>
+        </section>
+        <section class="home-pub">
+            <div class="home-title-app1">
+                <h3>Download our app!</h3>
+            </div>
+            <div class="wrapper-btn-app">
+                <div class="home-btn-app1">
+                    <a href="https://play.google.com/"><i class="fab fa-google-play icon-light"></i>
+                    <p>Google Play</p></a>
+                </div>
+                <div class="home-btn-app1">
+                    <a href="https://www.apple.com/app-store/"><i class="fab fa-app-store-ios icon-light"></i>
+                    <p>App Store</p></a>
+                </div>
+            </div>
+            <div class="home-title-app2">
+                <h3>Follow us</h3>
+            </div>
+            <div class="home-btn-app2">
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook-f icon-light"></i></a>
+                <a href="https://twitter.com"><i class="fab fa-twitter icon-light"></i></a>
+                <a href="https://www.instagram.com"><i class="fab fa-instagram icon-light"></i></a>
+                <a href="https://www.youtube.com/"><i class="fab fa-youtube icon-light"></i></a>
+            </div>
+        </section>
+    </section>
+    <section class="home-third-wrapper">
+        <div class="green-line"></div>
+        <h1>Where can you find us?</h1>
+        <ul>
+            <div class="home-promo-wrapper">
+                <li>Crusader : PORT OLISAR Space station.</li>
+                <li class="location-promo">// 15% OFF DURING SUMMER HOLLIDAY!</li>
+            </div>
+            <li>Yela : GRIM HEX Space station.</li>
+            <li>Hurston : LORVILLE City.</li>
+            <li>ArcCorp : AREA 18 City.</li>
+            <li>MicroTech : NEW BABBAGE City.</li>
+            <li>Crusader : ORISON City.</li>
+        </ul>
+        <div class="green-line"></div>
+    </section>
+    <section class="home-fourth-wrapper">
+        <div class="search-container js-filter">
+            <div class="search-container-row">
+                    {% include 'main/_filter.html.twig' with {form: form} only %}
+                <div class="grid-wrapper">
+                    <div class="grid js-filter-content">
+                        {% include 'main/_ship.html.twig' %}
+                    </div>
+                    <div class="btn-see-more js-filter-pagination">
+                        {{ knp_pagination_render(ship_list) }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+{% block javascripts %}
+
+    <script type="text/javascript">
+        var slides = document.querySelectorAll('.slide');
+        var btns = document.querySelectorAll('.btn-nav-home');
+        let currentSlide = 1;
+
+        // Javascript for image slider naviguation
+        var manualNav = function(manual){
+            slides.forEach((slide) => {
+                slide.classList.remove('active');
+
+                btns.forEach((btn) => {
+                    btn.classList.remove('active');
+                });
+            });
+            
+            slides[manual].classList.add('active');
+            btns[manual].classList.add('active');
+        }
+
+        btns.forEach((btn, i) => {
+            btn.addEventListener("click", () => {
+                manualNav(i);
+                currentSlide = i;
+            });
+        });
+
+        // Javascript for image slider autoplay naviguation
+        var repeat = function(activeClass){
+            let active = document.getElementsByClassName('active');
+            let i = 1;
+
+            var repeater = () => {
+                setTimeout(function(){
+                    [...active].forEach((activeSlide) => {
+                        activeSlide.classList.remove('active');
+                    });
+
+                slides[i].classList.add('active');
+                btns[i].classList.add('active');
+                i++;
+
+                if(slides.length == i){
+                    i = 0;
+                }
+                if(i >= slides.length){
+                    return;
+                }
+                repeater();
+            }, 5000);
+            }
+            repeater();
+        }
+        repeat();
+    </script>
+
+    <script src="./js/theme.js"></script>
+
+    <script src="https://kit.fontawesome.com/26bd733b9b.js" crossorigin="anonymous"></script>
+{% endblock %}
+{% endblock %}

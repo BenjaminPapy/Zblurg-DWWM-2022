@@ -1,0 +1,507 @@
+/* editProfile.html.twig (Iphone SE (375x667))*/
+
+.edit-user-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 667px;
+    width: 100%;
+    background: #282828;
+}
+
+.edit-user-form {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    background: #585858;
+    margin: 10%;
+    padding: 2%;
+    border-radius: 15px;
+}
+
+.edit-user-form h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    color: #bfbfbf;
+    margin-top: 10%;
+    margin-bottom: 15%;
+    cursor: default;
+}
+
+.edit-user-form div {
+    display: flex;
+    width: 50%;
+}
+
+.edit-user-form span {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+.mb-3 {
+    display: flex;
+    margin-bottom: 5%;
+}
+
+.edit-user-form input {
+    display: flex;
+    height: 5vh;
+    width: 100%;
+    border-radius: 15px;
+    border: transparent;
+    font-size: 1rem;
+    color: var(--text-icons);
+    box-shadow: 2px 2px 5px #333;
+}
+
+.edit-user-form input:hover {
+    box-shadow: 2px 2px 5px #333;
+    background-color: var(--second-background);
+}
+
+.edit-btn1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    border-radius: 15px;
+    border: transparent;
+    color: var(--text-icons);
+    height: 8vh;
+    width: 50%;
+    margin-bottom: 10%;
+    margin-top: 5%;
+    left: 25%;
+    background-color: var(--fourth-background);
+    font-family: inherit;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px #333;
+}
+
+.edit-btn1:hover {
+    box-shadow: 2px 2px 5px #333;
+    background-color: var(--header-footer);
+    color: var(--text-green);
+    transition: all 0.2s ease-out;
+}
+
+.edit-btn2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    border-radius: 15px;
+    border: transparent;
+    color: var(--text-icons);
+    height: 8vh;
+    width: 50%;
+    margin-bottom: 10%;
+    left: 25%;
+    background-color: var(--second-background);
+    box-shadow: 2px 2px 5px #333;
+}
+
+.edit-btn2:hover {
+    box-shadow: 2px 2px 5px #333;
+    background-color: var(--first-background);
+    transition: all 0.2s ease-out;
+}
+
+/* editProfile.html.twig (Iphone 13 max (428x926)) */
+@media (min-width: 428px) {
+
+    .edit-user-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        height: 926px;
+        width: 100%;
+    }
+
+    .edit-user-form h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        margin-top: 10%;
+        margin-bottom: 15%;
+        cursor: default;
+    }
+
+    .edit-user-form input {
+        display: flex;
+        height: 5vh;
+        width: 100%;
+        border-radius: 15px;
+        border: transparent;
+        font-size: 1.1rem;
+    }
+
+    .edit-btn1 {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2rem;
+        border-radius: 15px;
+        border: transparent;
+        height: 6vh;
+        width: 50%;
+        margin-bottom: 10%;
+        margin-top: 5%;
+        left: 25%;
+        font-family: inherit;
+        cursor: pointer;
+    }
+
+    .edit-btn2 {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2rem;
+        border-radius: 15px;
+        border: transparent;
+        height: 6vh;
+        width: 50%;
+        margin-bottom: 10%;
+        left: 25%;
+    }
+}
+
+/* editProfile.html.twig (iPad (810x1080)) */
+@media (min-width: 810px) {
+
+    .edit-user-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        height: 1080px;
+        width: 100%;
+    }
+
+    .edit-user-form {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 60%;
+        margin: 10%;
+        padding: 2%;
+        border-radius: 15px;
+    }
+
+    .edit-user-form h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2.2rem;
+        margin-top: 10%;
+        margin-bottom: 15%;
+        cursor: default;
+    }
+
+    .edit-btn1 {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.4rem;
+        border-radius: 15px;
+        border: transparent;
+        height: 6vh;
+        width: 50%;
+        margin-bottom: 10%;
+        margin-top: 5%;
+        left: 25%;
+        font-family: inherit;
+        cursor: pointer;
+    }
+
+    .edit-btn2 {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.4rem;
+        border-radius: 15px;
+        border: transparent;
+        height: 6vh;
+        width: 50%;
+        margin-bottom: 10%;
+        left: 25%;
+    }
+}
+
+/* editProfile.html.twig (iPad Pro(1024x1366)) */
+@media (min-width: 1024px) {
+
+    .edit-user-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        height: 1366px;
+        width: 100%;
+    }
+
+    .edit-user-form h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2.3rem;
+        margin-top: 10%;
+        margin-bottom: 15%;
+        cursor: default;
+    }
+
+    .edit-user-form input {
+        display: flex;
+        height: 4vh;
+        width: 100%;
+        border-radius: 15px;
+        border: transparent;
+        font-size: 1.1rem;
+    }
+
+    .edit-btn1 {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.4rem;
+        border-radius: 15px;
+        border: transparent;
+        height: 5vh;
+        width: 50%;
+        margin-bottom: 10%;
+        margin-top: 5%;
+        left: 25%;
+        font-family: inherit;
+        cursor: pointer;
+    }
+
+    .edit-btn2 {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.4rem;
+        border-radius: 15px;
+        border: transparent;
+        height: 5vh;
+        width: 50%;
+        margin-bottom: 10%;
+        left: 25%;
+    }
+}
+
+/* editProfile.html.twig (Laptop MDPI(1280x800)) */
+@media (min-width: 1280px) {
+
+    .edit-user-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        height: 800px;
+        width: 100%;
+    }
+
+    .edit-user-form h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2.3rem;
+        margin-top: 5%;
+        margin-bottom: 7%;
+        cursor: default;
+    }
+
+    .mb-3 {
+        display: flex;
+        margin-bottom: 2%;
+    }
+
+    .edit-user-form input {
+        display: flex;
+        height: 6vh;
+        width: 100%;
+        border-radius: 15px;
+        border: transparent;
+        font-size: 1.1rem;
+    }
+
+    .edit-btn1 {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.4rem;
+        border-radius: 15px;
+        border: transparent;
+        height: 7vh;
+        width: 50%;
+        margin-bottom: 7%;
+        margin-top: 2%;
+        left: 25%;
+        font-family: inherit;
+        cursor: pointer;
+    }
+
+    .edit-btn2 {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.4rem;
+        border-radius: 15px;
+        border: transparent;
+        height: 7vh;
+        width: 50%;
+        margin-bottom: 10%;
+        left: 25%;
+    }
+}
+
+/* editProfile.html.twig (Galaxy tab S7(1600x2560)) */
+@media (min-width: 1600px) {
+
+    .edit-user-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        height: 2560px;
+        width: 100%;
+    }
+
+    .edit-user-form input {
+        display: flex;
+        height: 2vh;
+        width: 100%;
+        border-radius: 15px;
+        border: transparent;
+        font-size: 1.3rem;
+    }
+
+    .edit-btn1 {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+        border-radius: 15px;
+        border: transparent;
+        height: 3vh;
+        width: 50%;
+        margin-bottom: 7%;
+        margin-top: 2%;
+        left: 25%;
+        font-family: inherit;
+        cursor: pointer;
+    }
+
+    .edit-btn2 {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+        border-radius: 15px;
+        border: transparent;
+        height: 3vh;
+        width: 50%;
+        margin-bottom: 10%;
+        left: 25%;
+    }
+}
+
+/* editProfile.html.twig (PC (1920x1080)) */
+@media (min-width: 1920px) {
+
+    .edit-user-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        height: 1080px;
+        width: 100%;
+    }
+
+    .edit-user-form h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2.5rem;
+        margin-top: 5%;
+        margin-bottom: 7%;
+    }
+
+    .edit-user-form input {
+        display: flex;
+        height: 5vh;
+        width: 100%;
+        border-radius: 15px;
+        border: transparent;
+        font-size: 1.2rem;
+    }
+
+    .edit-btn1 {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+        border-radius: 15px;
+        border: transparent;
+        height: 6vh;
+        width: 50%;
+        margin-bottom: 7%;
+        margin-top: 2%;
+        left: 25%;
+        font-family: inherit;
+        cursor: pointer;
+    }
+
+    .edit-btn2 {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+        border-radius: 15px;
+        border: transparent;
+        height: 6vh;
+        width: 50%;
+        margin-bottom: 10%;
+        left: 25%;
+    }
+}
+
+/* editProfile.html.twig (PC (2560x1440)) */
+@media (min-width: 2560px) {
+
+    .edit-user-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        height: 1440px;
+        width: 100%;
+    }
+}

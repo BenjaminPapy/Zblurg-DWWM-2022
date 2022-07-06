@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}LOG IN{% endblock %}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/style-login.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/reset.css') }}">
+        <script src="https://kit.fontawesome.com/26bd733b9b.js" crossorigin="anonymous"></script>
+    </head>
+    <body class="body-login">
+        <div class="login-wrapper">
+            <div class="login-header">
+                <h1>Login</h1>
+            </div>
+            <div class="login-main">
+                <form method="post">
+                    <div class="login-form">
+                        {% if error %}
+                            <div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+                        {% endif %}
+
+                        {% if app.user %}
+                            <div class="logged-message">
+                                You are logged in as {{ app.user.username }}, <a style="color: var(--text-green);" href="{{ path('app_logout') }}">Logout</a>
+                            </div>
+                        {% endif %}
+
+                        <span>
+                            <input type="email" value="{{ last_username }}" name="email" id="inputEmail" class="form-control" autocomplete="email" placeholder="Email" required autofocus>
+                        </span>
+                        <span>
+                            <input type="password" name="password" id="inputPassword" class="form-control" autocomplete="current-password" placeholder="Password" required>
+                        </span>
+
+                        <input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}">
+
+                        {#
+                            Uncomment this section and add a remember_me option below your firewall to activate remember me functionality.
+                            See https://symfony.com/doc/current/security/remember_me.html
+
+                            <div class="checkbox mb-3">
+                                <label>
+                                    <input type="checkbox" name="_remember_me"> Remember me
+                                </label>
+                            </div>
+                        #}
+
+                        <button class="sign-in" type="submit">
+                            Sign on
+                        </button>
+                    </div>
+                </form>
+
+                <a href="{{ path("homepage") }}" style="color: #202020;" >
+                    <button class="back-home">
+                        Back to homepage
+                    </button>
+                </a>
+
+            </div>
+        </div>
+
+        {#
+            Uncomment this section and add a remember_me option below your firewall to activate remember me functionality.
+            See https://symfony.com/doc/current/security/remember_me.html
+
+            <div class="checkbox mb-3">
+                <label>
+                    <input type="checkbox" name="_remember_me"> Remember me
+                </label>
+            </div>
+        #}
+
+    </body>
+</html>

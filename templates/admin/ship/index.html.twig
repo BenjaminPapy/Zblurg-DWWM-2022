@@ -1,0 +1,103 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+{% for ship in ship_list %}
+    <div class="main-content">
+        <a href="{{ path('admin_ship_show', {'id': ship.id}) }}">
+        <h2>{{ ship.name }}</h2>
+        <div class="first-wrapper">
+            <div class="ship-model">
+                <div class="model-block-content">
+                    <h4>Type</h4>
+                    <p>{{ ship.type }}</p>
+                </div>
+                <div class="model-block-content">
+                    <h4>Manufacturer</h4>
+                    <p>{{ ship.brand }}</p>
+                    <!-- brand.logo -->
+                </div>
+                <div class="model-block-content">
+                    <h4>Description</h4>
+                    <p>{{ ship.description }}</p>
+                </div>
+            </div>
+            <div class="content-line-break">
+            </div>
+            <div class="ship-measure">
+                <h3>MEASUREMENT</h3>
+                <div class="model-block">
+                    <div class="model-block-content">
+                        <h4>Length</h4>
+                        <p>{{ ship.length }}</p>
+                    </div>
+                    <div class="model-block-content">
+                        <h4>Beam</h4>
+                        <p>{{ ship.beam }}</p>
+                    </div>
+                    <div class="model-block-content">
+                        <h4>Height</h4>
+                        <p>{{ ship.height }}</p>
+                    </div>
+                    <div class="model-block-content">
+                        <h4>Size</h4>
+                        <p>{{ ship.size }}</p>
+                    </div>
+                    <div class="model-block-content">
+                        <h4>Mass</h4>
+                        <p>{{ ship.mass }}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="ship-structure">
+                <h3>STRUCTURAL</h3>
+                <div class="model-block">
+                    <div class="model-block-content">
+                        <h4>Cargo Capacity</h4>
+                        <p>{{ ship.cargoCap }}</p>
+                    </div>
+                    <div class="model-block-content">
+                        <h4>SCM Speed</h4>
+                        <p>{{ ship.scmSpeed }}</p>
+                    </div>
+                    <div class="model-block-content">
+                        <h4>Afterburner Speed</h4>
+                        <p>{{ ship.afterburnSpeed }}</p>
+                    </div>
+                    <div class="model-block-content">
+                        <h4>Min Crew</h4>
+                        <p>{{ ship.minCrew }}</p>
+                    </div>
+                    <div class="model-block-content">
+                        <h4>Max Crew</h4>
+                        <p>{{ ship.maxCrew }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="second-wrapper">
+            <div class="ship-view-holder">
+                <div class="ship-view-test">
+                    {% if ship.shipView %}
+                        <img src="{{ asset('/images/ship-view/' ~ ship.shipView.name) }}" alt="ship view">
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        <div class="third-wrapper">
+            <div class="image-holder">
+                <div class="image-test">
+                {% for image in ship.images %}
+                    <img src="{{ asset('/images/ship-images/' ~ image.name) }}" alt="Image">
+                {% endfor %}
+                </div>
+            </div>
+        </div>
+        {% else %}
+            <div>
+                <div colspan="13">no records found</div>
+            </div>
+        {% endfor %}
+        </a>
+    </div>
+    <a class="boxBtnApp1" href="{{ path('admin_ship_new') }}">Create new</a>
+{% endblock %}

@@ -1,0 +1,316 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ ship.name }}{% endblock %}
+
+{% block body %}
+    <section class="show-first-wrapper" style="background-image: url({{ vich_uploader_asset(ship, 'shipViewFile') }})">
+        <div class="show-title-wrapper">
+            <div class="show-text-wrapper">
+                <h1>{{ ship.name }}</h1>
+                <h2>{{ ship.type }}</h2>
+                {% if ship.premium == true %}
+                    <h3 style="color: var(--text-green)">PREMIUM</h3>
+                {% endif %}
+            </div>
+        </div>
+    </section>
+    <section class="show-second-wrapper">
+        <div class="second-title-box">
+            <h2>By</h2>
+            <p>{{ ship.brand }}</p>
+            <img src="{{ vich_uploader_asset(ship.brand, 'logoFile') }}"/>
+        </div>
+    </section>
+    <section class="show-third-wrapper">
+
+
+
+        <p class="ship-description">{{ ship.description }}</p>
+
+
+        {% if app.user %}
+            {% if ship.premium == true %}
+                {% if not is_granted("ROLE_PREMIUM") %}
+                    <div class="rent-wrapper">
+                        <a href="../premium_info" class="show-popup-btn">Get premium</a>
+                        <h3>{{ ship.price }}£</h3>
+                    </div>
+                {% else %}
+                    <div class="rent-wrapper">
+                        <a href="#show-popup" class="show-popup-btn"><i class="fa-solid fa-cart-shopping"></i>Rent this ship</a>
+                        <h3>{{ ship.price }}£</h3>
+                    </div>
+                    <div id="show-popup" class="show-overlay">
+                        <div class="show-popup">
+                            <a href="#" class="show-cross"><i class="fa-solid fa-xmark"></i></a>
+                            <h3>{{ ship.name }}</h3>
+                            <p>{{ ship.price }}£</p>
+                            <a href="#" class="ship-rent-btn">Rent this ship</a>
+                        </div>
+                    </div>
+                {% endif %}
+            {% endif %}
+            {% if ship.premium == false %}
+                <div class="rent-wrapper">
+                    <a href="#show-popup" class="show-popup-btn"><i class="fa-solid fa-cart-shopping"></i>Rent this ship</a>
+                    <h3>{{ ship.price }}£</h3>
+                </div>
+                <div id="show-popup" class="show-overlay">
+                    <div class="show-popup">
+                        <a href="#" class="show-cross"><i class="fa-solid fa-xmark"></i></a>
+                        <h3>{{ ship.name }}</h3>
+                        <p>{{ ship.price }}£</p>
+                        <a href="#" class="ship-rent-btn">Rent this ship</a>
+                    </div>
+                </div>
+            {% endif %}
+        {% else %}
+
+        {% endif %}
+
+    </section>
+    <section class="show-fourth-wrapper">
+        <div class="show-slider">
+            <input type="radio" name="radio-btn" id="radio1" checked>
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+            <div class="show-slide s1 show-active">
+                {% for images in ship.shipImages %}
+                    <div id="images-{{images.id}}">
+                        {% if _key == 0 %}
+                            <img src="/images/ship-images/{{ images }}"/>
+                        {% endif %}
+                    </div>
+                {% endfor %}
+            </div>
+            <div class="show-slide">
+                {% for images in ship.shipImages %}
+                    <div id="images-{{images.id}}">
+                        {% if _key == 1 %}
+                            <img src="/images/ship-images/{{ images }}"/>
+                        {% endif %}
+                    </div>
+                {% endfor %}
+            </div>
+            <div class="show-slide">
+                {% for images in ship.shipImages %}
+                    <div id="images-{{images.id}}">
+                        {% if _key == 2 %}
+                            <img src="/images/ship-images/{{ images }}"/>
+                        {% endif %}
+                    </div>
+                {% endfor %}
+            </div>
+            <div class="show-slide">
+                {% for images in ship.shipImages %}
+                    <div id="images-{{images.id}}">
+                        {% if _key == 3 %}
+                            <img src="/images/ship-images/{{ images }}"/>
+                        {% endif %}
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="show-slider-nav">
+            <label for="radio1" class="btn-nav-show show-active"></label>
+            <label for="radio2" class="btn-nav-show"></label>
+            <label for="radio3" class="btn-nav-show"></label>
+            <label for="radio4" class="btn-nav-show"></label>
+        </div>
+        <section class="show-fifth-wrapper">
+            <div class="show-ship-info">
+                <div class="ship-measure">
+                    <h3>MEASUREMENT</h3>
+                    <div class="model-block">
+                        <div class="model-block-content">
+                            <h4>Length :</h4>
+                            <p>{{ ship.length }}</p>
+                        </div>
+                        <div class="model-block-content">
+                            <h4>Beam :</h4>
+                            <p>{{ ship.beam }}</p>
+                        </div>
+                        <div class="model-block-content">
+                            <h4>Height :</h4>
+                            <p>{{ ship.height }}</p>
+                        </div>
+                        <div class="model-block-content">
+                            <h4>Size :</h4>
+                            <p>{{ ship.size }}</p>
+                        </div>
+                        <div class="model-block-content">
+                            <h4>Mass :</h4>
+                            <p>{{ ship.mass }}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ship-structure">
+                    <h3>SPECIFICATION</h3>
+                    <div class="model-block">
+                        <div class="model-block-content">
+                            <h4>Cargo Capacity :</h4>
+                            <p>{{ ship.cargocap }}</p>
+                        </div>
+                        <div class="model-block-content">
+                            <h4>SCM Speed :</h4>
+                            <p>{{ ship.scmSpeed }}</p>
+                        </div>
+                        <div class="model-block-content">
+                            <h4>Afterburner Speed :</h4>
+                            <p>{{ ship.afterburnSpeed }}</p>
+                        </div>
+                        <div class="model-block-content">
+                            <h4>Min Crew :</h4>
+                            <p>{{ ship.minCrew }}</p>
+                        </div>
+                        <div class="model-block-content">
+                            <h4>Max Crew :</h4>
+                            <p>{{ ship.maxCrew }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+{% block javascripts %}
+    <script type="text/javascript">
+
+        if (window.matchMedia("(max-width: 1919px)").matches) {
+
+            const slider = document.querySelector('.show-slider'),
+                slides = Array.from(document.querySelectorAll('.show-slide'))
+
+            let isDragging = false,
+                startPos = 0,
+                currentTranslate = 0,
+                prevTranslate = 0,
+                animationID = 0,
+                currentIndex = 0
+
+            slides.forEach((slide, index) => {
+                // empecher de drag l'image hors du slider
+                const slideImage = slide.querySelector('img')
+                slideImage.addEventListener('dragstart', (e) => e. preventDefault())
+
+                // Touch events
+                slide.addEventListener('touchstart', touchStart(index))
+
+                // quand on clique avec le doigt
+                slide.addEventListener('touchend', touchEnd)
+
+                // quand on bouge pour naviguer dans la page
+                slide.addEventListener('touchmove', touchMove)
+
+                // Mouse events
+                slide.addEventListener('mousedown', touchStart(index))
+
+                // quand on lache le clique
+                slide.addEventListener('mouseup', touchEnd)
+
+                // quand on sort la souris du slider
+                slide.addEventListener('mouseleave', touchEnd)
+
+                // quand on bouge pour naviguer dans la page
+                slide.addEventListener('mousemove', touchMove)
+            })
+
+            // disable right click/long click contect menu
+            window.oncontextmenu = function(event) {
+                event.preventDefault()
+                event.stopPropagation()
+                return false
+            }
+
+            function touchStart(index) {
+                return function(event) {
+                    currentIndex = index
+                    startPos = getPositionX(event)
+                    isDragging = true
+
+                    // https://css-tricks.com/using-requestanimationframe/
+                    animationID = requestAnimationFrame(animation)
+                    slider.classList.add('grabbing')
+                }
+            }
+
+            function touchEnd() {
+                isDragging = false
+                cancelAnimationFrame(animationID)
+
+                const movedBy = currentTranslate - prevTranslate
+
+                if(movedBy < -100 && currentIndex < slides.length - 1)
+                currentIndex += 1
+
+                if(movedBy > 100 && currentIndex > 0) currentIndex -= 1
+
+                setPositionByIndex()
+
+                slider.classList.remove('grabbing')
+            }
+
+            function touchMove(event) {
+                if (isDragging) {
+                    const currentPosition = getPositionX(event)
+                    currentTranslate = prevTranslate + currentPosition -
+                    startPos
+                }
+            }
+
+            function getPositionX() {
+                return event.type.includes('mouse')
+                        ? event.pageX
+                        : event.touches[0].clientX
+            }
+
+            function animation() {
+                setSliderPosition()
+                if(isDragging) requestAnimationFrame(animation)
+            }
+
+            function setSliderPosition() {
+                slider.style.transform = `translateX(${currentTranslate}px)`
+            }
+
+            function setPositionByIndex() {
+                currentTranslate = currentIndex * -window.innerWidth
+                prevTranslate = currentTranslate
+                setSliderPosition()
+            }
+
+        } else {
+
+            var slides = document.querySelectorAll('.show-slide');
+            var btns = document.querySelectorAll('.btn-nav-show');
+
+            // Javascript for image slider manual nav
+            var manualNav = function(manual){
+                slides.forEach((slide) => {
+                    slide.classList.remove('show-active');
+
+                    btns.forEach((btn) => {
+                        btn.classList.remove('show-active');
+                    })
+                });
+
+                slides[manual].classList.add('show-active');
+                btns[manual].classList.add('show-active');
+            }
+
+            btns.forEach((btn,i) => {
+                btn.addEventListener("click", () => {
+                    manualNav(i);
+                    currentSlide = i;
+                });
+            });
+
+        }
+            
+    </script>
+
+    <script src="/js/theme.js"></script>
+
+{% endblock %}
+{% endblock %}

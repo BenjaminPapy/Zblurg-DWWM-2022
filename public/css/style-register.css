@@ -1,0 +1,632 @@
+/* register.html.twig (Iphone SE (375x667))*/
+
+.body-register {
+    font-family: 'made_evolve_sans_evoregular';
+    background-image: url('../images/backgroundRegister.jpg');
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.register-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 1vh;
+    border-radius: 25px;
+    background-color: rgba(0,0,0,0.3);
+    box-shadow: 0 0 17px #333;
+    width: 90%;
+}
+
+.register-header {
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
+    padding-bottom: 10%;
+    cursor: default;
+}
+
+.register-header h1 {
+    font-size: 2rem;
+    color: var(--text-light);
+}
+
+.register-header h1::first-letter {
+    color: var(--text-green);
+
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-form a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.register-form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mb-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 10%;
+}
+
+.mb-3 input {
+    height: 5vh;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-size: 1.1rem;
+    color: var(--text-icons);
+    border-radius: 13px;
+}
+
+.mb-3 input:hover {
+    box-shadow: 2px 2px 5px #333;
+    background-color: var(--second-background);
+}
+
+.invalid-feedback {
+    display: flex;
+    align-items: center;
+    color: red;
+    font-weight: 700;
+    margin-inline: 15%;
+}
+
+.register-password {
+    display: flex;
+    flex-direction: column;
+}
+
+.register-rgpd {
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+.register-rgpd p {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    font-size: 1.1rem;
+    color: var(--text-light);
+    cursor: default;
+}
+
+.register-rgpd a {
+    width: auto;
+    color: var(--text-green);
+    padding-left: 2%;
+}
+
+#registration_form_RGPDConsent {
+    height: 5vh;
+    width: 5vw;
+}
+
+.register-in {
+    position: relative;
+    font-family: 'made_evolve_sans_evoregular';
+    height: 7vh;
+    width: 70vw;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-size: 1rem;
+    background-color: var(--fourth-background);
+    color: var(--text-icons);
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin-bottom: 10%;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.register-in:hover {
+    box-shadow: 2px 2px 5px #333;
+    background-color: var(--header-footer);
+    color: var(--text-green);
+    transition: all 0.2s ease-out;
+}
+
+.back-home-register {
+    position: relative;
+    font-family: 'made_evolve_sans_evoregular';
+    height: 7vh;
+    width: 70vw;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-size: 1rem;
+    background-color: var(--second-background);
+    color: var(--text-icons);
+    letter-spacing: 1px;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-bottom: 10%;
+}
+
+.back-home-register:hover {
+    box-shadow: 2px 2px 5px #333;
+    background-color: var(--first-background);
+    transition: all 0.2s ease-out;
+}
+
+/* register.html.twig (Iphone 13 max (428x926)) */
+@media (min-width: 428px) {
+
+    .register-wrapper {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 7vh;
+        border-radius: 25px;
+        width: 90%;
+    }
+
+    .register-header {
+        display: flex;
+        justify-content: center;
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+
+    .register-header h1 {
+        font-size: 2.8rem;
+    }
+
+    .invalid-feedback {
+        display: flex;
+        align-items: center;
+        font-weight: 700;
+        margin-inline: 20%;
+    }
+    
+    .register-in {
+        position: relative;
+        font-family: 'made_evolve_sans_evoregular';
+        height: 6vh;
+        width: 60vw;
+        border: none;
+        outline: none;
+        padding-inline: 10%;
+        box-sizing: border-box;
+        font-size: 1.1rem;
+        letter-spacing: 1px;
+        font-weight: bold;
+        margin-bottom: 10%;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+
+    .back-home-register {
+        position: relative;
+        font-family: 'made_evolve_sans_evoregular';
+        height: 6vh;
+        width: 60vw;
+        border: none;
+        outline: none;
+        box-sizing: border-box;
+        font-size: 1.1rem;
+        letter-spacing: 1px;
+        font-weight: bold;
+        margin-bottom: 10%;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+}
+
+/* register.html.twig (iPad (810x1080)) */
+@media (min-width: 810px) {
+
+    .register-wrapper {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 5vh;
+        border-radius: 25px;
+        width: 90%;
+    }
+
+    .register-header h1 {
+        font-size: 3.3rem;
+    }
+
+    .mb-3 input {
+        height: 4.5vh;
+        width: 40vw;
+        border: none;
+        outline: none;
+        box-sizing: border-box;
+        font-size: 1.1rem;
+        border-radius: 13px;
+    }
+
+    .register-rgpd p {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        font-size: 1.2rem;
+    }
+
+    #registration_form_RGPDConsent {
+        margin: 2vh;
+        height: 3vh;
+        width: 3vw;
+    }
+
+    .register-in {
+        position: relative;
+        font-family: 'made_evolve_sans_evoregular';
+        height: 6vh;
+        width: 40vw;
+        border: none;
+        outline: none;
+        padding-inline: 10%;
+        box-sizing: border-box;
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+        font-weight: bold;
+        margin-bottom: 10%;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+
+    .back-home-register {
+        position: relative;
+        font-family: 'made_evolve_sans_evoregular';
+        height: 6vh;
+        width: 40vw;
+        border: none;
+        outline: none;
+        box-sizing: border-box;
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+        font-weight: bold;
+        margin-bottom: 10%;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+}
+
+/* register.html.twig (iPad Pro(1024x1366)) */
+@media (min-width: 1024px) {
+
+    .register-header h1 {
+        font-size: 3.5rem;
+    }
+
+    .mb-3 input {
+        height: 4vh;
+        border: none;
+        outline: none;
+        box-sizing: border-box;
+        font-size: 1.1rem;
+        border-radius: 13px;
+    }
+
+    .invalid-feedback {
+        display: flex;
+        align-items: center;
+        font-weight: 700;
+        margin-inline: 5%;
+    }
+
+    #registration_form_RGPDConsent {
+        margin: 1vh;
+        height: 3vh;
+        width: 3vw;
+    }
+
+    .register-in {
+        position: relative;
+        font-family: 'made_evolve_sans_evoregular';
+        height: 5vh;
+        border: none;
+        outline: none;
+        box-sizing: border-box;
+        font-size: 1.3rem;
+        letter-spacing: 1px;
+        font-weight: bold;
+        margin-bottom: 10%;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+
+    .back-home-register {
+        position: relative;
+        font-family: 'made_evolve_sans_evoregular';
+        height: 5vh;
+        border: none;
+        outline: none;
+        box-sizing: border-box;
+        font-size: 1.3em;
+        letter-spacing: 1px;
+        font-weight: bold;
+        border-radius: 15px;
+        cursor: pointer;
+        margin-bottom: 10%;
+    }
+}
+
+/* register.html.twig(Laptop MDPI(1280x800)) */
+@media (min-width: 1280px) {
+
+    .register-wrapper {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 5vh;
+        border-radius: 25px;
+        width: 40%;
+    }
+
+    .register-header {
+        display: flex;
+        justify-content: center;
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+
+    .register-header h1 {
+        font-size: 3.1rem;
+    }
+
+    .register-rgpd p {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        font-size: 1.05rem;
+    }
+
+    .mb-3 input {
+        height: 4.5vh;
+        width: 20vw;
+        border: none;
+        outline: none;
+        box-sizing: border-box;
+        font-size: 1.1rem;
+        border-radius: 13px;
+    }
+
+    .invalid-feedback {
+        display: flex;
+        align-items: center;
+        font-weight: 700;
+        margin-inline: 20%;
+    }
+
+    .register-in {
+        position: relative;
+        font-family: 'made_evolve_sans_evoregular';
+        height: 6vh;
+        width: 25vw;
+        border: none;
+        outline: none;
+        padding-inline: 10%;
+        box-sizing: border-box;
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+        font-weight: bold;
+        margin-bottom: 10%;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+
+    .back-home-register {
+        position: relative;
+        font-family: 'made_evolve_sans_evoregular';
+        height: 6vh;
+        width: 25vw;
+        border: none;
+        outline: none;
+        box-sizing: border-box;
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+        font-weight: bold;
+        margin-bottom: 5%;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+}
+
+/* register.html.twig (Galaxy tab S7(1600x2560)) */
+@media (min-width: 1600px) {
+
+    .body-register {
+        font-family: 'made_evolve_sans_evoregular';
+        background-repeat: no-repeat;
+        overflow: hidden;
+    }
+
+    .register-wrapper {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 3vh;
+        border-radius: 25px;
+        width: 70%;
+    }
+
+    .register-header {
+        display: flex;
+        justify-content: center;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    .register-header h1 {
+        font-size: 3.2rem;
+    }
+
+    .register-rgpd p {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        font-size: 1.2rem;
+    }
+
+    .mb-3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 3vh;
+        margin-bottom: 10%;
+    }
+    
+    .mb-3 input {
+        height: 2vh;
+        width: 20vw;
+        border: none;
+        outline: none;
+        box-sizing: border-box;
+        font-size: 1.1rem;
+        border-radius: 13px;
+    }
+
+    .invalid-feedback {
+        display: flex;
+        align-items: center;
+        font-weight: 700;
+        margin-inline: 15%;
+    }
+    
+    #registration_form_RGPDConsent {
+        margin: 0;
+        height: 2vh;
+        width: 2vw;
+    }
+
+    .register-in {
+        position: relative;
+        font-family: 'made_evolve_sans_evoregular';
+        height: 2vh;
+        width: 100%;
+        border: none;
+        outline: none;
+        padding-inline: 10%;
+        box-sizing: border-box;
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+        font-weight: bold;
+        margin-bottom: 10%;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+
+    .back-home-register {
+        position: relative;
+        font-family: 'made_evolve_sans_evoregular';
+        height: 2vh;
+        border: none;
+        outline: none;
+        box-sizing: border-box;
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+        font-weight: bold;
+        margin-bottom: 5%;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+}
+
+/* register.html.twig (PC (1920x1080)) */
+@media (min-width: 1920px) {
+
+    .body-register {
+        font-family: 'made_evolve_sans_evoregular';
+        background-image: url('../images/backgroundRegister.jpg');
+        background-repeat: no-repeat;
+        overflow: hidden;
+    }
+
+    .register-wrapper {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 15vh;
+        border-radius: 25px;
+        width: 40%;
+    }
+
+    .register-header {
+        display: flex;
+        justify-content: center;
+        padding-top: 5%;
+        padding-bottom: 10%;
+    }
+
+    .register-header h1 {
+        font-size: 3.3rem;
+    }
+
+    .mb-3 input {
+        height: 25vh;
+        border: none;
+        outline: none;
+        box-sizing: border-box;
+        font-size: 1.1rem;
+        border-radius: 13px;
+    }
+
+    .invalid-feedback {
+        display: flex;
+        align-items: center;
+        font-weight: 700;
+        margin-inline: 5%;
+    }
+
+    .register-in {
+        position: relative;
+        font-family: 'made_evolve_sans_evoregular';
+        height: 5vh;
+        width: 100%;
+        border: none;
+        outline: none;
+        padding-inline: 10%;
+        box-sizing: border-box;
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+        font-weight: bold;
+        margin-bottom: 10%;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+
+    .back-home-register {
+        position: relative;
+        font-family: 'made_evolve_sans_evoregular';
+        height: 5vh;
+        width: 50%;
+        border: none;
+        outline: none;
+        box-sizing: border-box;
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+        font-weight: bold;
+        margin-bottom: 5%;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+}

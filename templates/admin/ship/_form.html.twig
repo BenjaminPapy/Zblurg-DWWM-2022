@@ -1,0 +1,45 @@
+{{ form_start(form) }}
+    {{ form_errors(form) }}
+
+    {{ form_row(form.name) }}
+    {{ form_row(form.slug) }}
+    {{ form_row(form.type) }}
+    {{ form_row(form.brand) }}
+    {{ form_row(form.description) }}
+    {{ form_row(form.length) }}
+    {{ form_row(form.beam) }}
+    {{ form_row(form.height) }}
+    {{ form_row(form.size) }}
+    {{ form_row(form.mass) }}
+    {{ form_row(form.cargoCap) }}
+    {{ form_row(form.scmSpeed) }}
+    {{ form_row(form.afterburnSpeed) }}
+    {{ form_row(form.minCrew) }}
+    {{ form_row(form.maxCrew) }}
+    {{ form_row(form.shipView) }}
+    {{ form_row(form.images) }}
+    {# Vérifier si la route est "admin_ship_edit" on affiche les images #}
+    {% if app.request.attributes.get('_route') == 'admin_ship_edit' %}
+
+        <h2>Ship View</h2>
+
+            {% if ship.shipView %}
+                <div>
+                    <img src="{{ asset('/images/ship-view/' ~ ship.shipView.name) }}" alt="Image" width="300px">
+                </div>
+            {% endif %}
+
+        <h2>Images<h2>
+
+        {% for image in ship.images %}
+            <div>
+                <img src="{{ asset('/images/ship-images/' ~ image.name) }}" alt="Image" width="300px">
+                <a href="{{ path('admin_image_delete', {'id': image.id}) }}"
+                data-delete data-token="{{csrf_token('delete' ~ image.id) }}">Supprimer</a>
+            </div>
+        {% endfor %}
+    {% endif %}
+
+    <button class="btn">{{ button_label|default('Save') }}</button>
+
+{{ form_end(form) }}

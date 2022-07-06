@@ -1,0 +1,476 @@
+/* login.html.twig (Iphone SE (375x667))*/
+
+.body-login {
+    font-family: 'made_evolve_sans_evoregular';
+    background-image: url('../images/loginBackground.jpg');
+    background-repeat: no-repeat;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+.login-wrapper {
+    margin: 15vh;
+    border-radius: 25px;
+    background-color: rgba(0,0,0,0.2);
+    box-shadow: 0 0 17px #333;
+    width: 90%;
+}
+
+.login-header {
+    text-align: center;
+    padding-top: 15%;
+}
+
+.login-header h1 {
+    font-size: 2.8rem;
+    margin-bottom: 80px;
+    cursor: default;
+    color: var(--text-light);
+}
+
+.login-header h1::first-letter {
+    color: var(--text-green);
+}
+
+.login-main {
+    text-align: center;
+}
+
+.logged-message {
+    font-size: 1.1rem;
+    margin: 15px;
+    color: red;
+}
+
+.login-form span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+.login-form input {
+    height: 6vh;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-size: 1rem;
+    color: var(--text-icons);
+    border-radius: 13px;
+    left: 0;
+    box-shadow: 2px 2px 5px #333;
+}
+
+.login-main input:hover {
+    box-shadow: 2px 2px 5px #333;
+    background-color: var(--second-background);
+}
+
+.login-main input::placeholder {
+    color: var(--header-footer);
+}
+
+.sign-in {
+    font-family: 'made_evolve_sans_evoregular';
+    height: 7vh;
+    width: 70%;
+    border: none;
+    outline: none;
+    padding-inline: 10%;
+    box-sizing: border-box;
+    font-size: 1rem;
+    background-color: var(--fourth-background);
+    color: var(--text-icons);
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px #333;
+    transition: all 0.2s ease-out;
+}
+
+.sign-in:hover {
+    box-shadow: 2px 2px 5px #333;
+    background-color: var(--header-footer);
+    color: var(--text-green);
+}
+
+.back-home {
+    font-family: 'made_evolve_sans_evoregular';
+    height: 7vh;
+    width: 70%;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-size: 1rem;
+    background-color: var(--second-background);
+    color: var(--text-icons);
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin-bottom: 10%;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px #333;
+    transition: all 0.2s ease-out;
+}
+
+.back-home:hover {
+    box-shadow: 2px 2px 5px #333;
+    background-color: var(--first-background);
+}
+
+/* login.html.twig (Iphone 13 max (428x926)) */
+@media (min-width: 428px) {
+
+    .login-wrapper {
+        margin: 15vh;
+        border-radius: 25px;
+        width: 70%;
+    }
+
+    .login-header h1 {
+        font-size: 2.8rem;
+        margin-bottom: 80px;
+    }
+
+    .login-form span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 5%;
+        margin: 10%;
+    }
+
+    .login-form input {
+        height: 5vh;
+        width: 85%;
+        border: none;
+        outline: none;
+        box-sizing: border-box;
+        font-size: 1.1rem;
+        border-radius: 13px;
+        left: 0;
+    }
+
+    .sign-in {
+        font-family: 'made_evolve_sans_evoregular';
+        height: 6vh;
+        width: 70%;
+        border: none;
+        outline: none;
+        padding-inline: 10%;
+        box-sizing: border-box;
+        font-size: 1.1rem;
+        letter-spacing: 1px;
+        font-weight: bold;
+        margin-top: 5%;
+        margin-bottom: 10%;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+    
+    .back-home {
+        font-family: 'made_evolve_sans_evoregular';
+        height: 6vh;
+        width: 70%;
+        border: none;
+        outline: none;
+        box-sizing: border-box;
+        font-size: 1.1rem;
+        letter-spacing: 1px;
+        font-weight: bold;
+        margin-bottom: 10%;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+}
+
+/* login.html.twig (iPad (810x1080)) */
+@media (min-width: 810px) {
+
+    .login-header h1 {
+        font-size: 3.3rem;
+        margin-bottom: 80px;
+    }
+
+    .sign-in {
+        font-family: 'made_evolve_sans_evoregular';
+        height: 6vh;
+        width: 70%;
+        border: none;
+        outline: none;
+        padding-inline: 10%;
+        box-sizing: border-box;
+        font-size: 1.3rem;
+        letter-spacing: 1px;
+        font-weight: bold;
+        margin-top: 5%;
+        margin-bottom: 10%;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+    
+    .back-home {
+        font-family: 'made_evolve_sans_evoregular';
+        height: 6vh;
+        width: 70%;
+        border: none;
+        outline: none;
+        box-sizing: border-box;
+        font-size: 1.3rem;
+        letter-spacing: 1px;
+        font-weight: bold;
+        margin-bottom: 10%;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+}
+
+/* login.html.twig (iPad Pro(1024x1366)) */
+@media (min-width: 1024px) {
+
+    .login-header h1 {
+        font-size: 3.5rem;
+        margin-bottom: 80px;
+    }
+
+    .login-form input {
+        height: 4.5vh;
+        border: none;
+        outline: none;
+        box-sizing: border-box;
+        font-size: 1.2rem;
+        border-radius: 13px;
+        left: 0;
+    }
+
+    .sign-in {
+        font-family: 'made_evolve_sans_evoregular';
+        height: 5vh;
+        width: 70%;
+        border: none;
+        outline: none;
+        padding-inline: 10%;
+        box-sizing: border-box;
+        font-size: 1.4rem;
+        letter-spacing: 1px;
+        font-weight: bold;
+        margin-top: 5%;
+        margin-bottom: 10%;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+    
+    .back-home {
+        font-family: 'made_evolve_sans_evoregular';
+        height: 5vh;
+        width: 70%;
+        border: none;
+        outline: none;
+        box-sizing: border-box;
+        font-size: 1.4rem;
+        letter-spacing: 1px;
+        font-weight: bold;
+        margin-bottom: 10%;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+}
+
+/* login.html.twig (Laptop MDPI(1280x800)) */
+@media (min-width: 1280px) {
+
+    .login-wrapper {
+        margin: 15vh;
+        border-radius: 25px;
+        width: 40%;
+    }
+
+    .login-header {
+        text-align: center;
+        padding-top: 10%;
+    }
+
+    .login-header h1 {
+        font-size: 3.1rem;
+        margin-bottom: 80px;
+    }
+
+    .login-form span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 5%;
+        margin: 5%;
+    }
+
+    .login-form input {
+        height: 5vh;
+        width: 50%;
+        border: none;
+        outline: none;
+        box-sizing: border-box;
+        font-size: 1.1rem;
+        border-radius: 13px;
+        left: 0;
+    }
+
+    .sign-in {
+        font-family: 'made_evolve_sans_evoregular';
+        height: 6vh;
+        width: 50%;
+        border: none;
+        outline: none;
+        padding-inline: 10%;
+        box-sizing: border-box;
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+        font-weight: bold;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+    
+    .back-home {
+        font-family: 'made_evolve_sans_evoregular';
+        height: 6vh;
+        width: 50%;
+        border: none;
+        outline: none;
+        box-sizing: border-box;
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+        font-weight: bold;
+        margin-bottom: 10%;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+}
+
+/* login.html.twig (Galaxy tab S7(1600x2560)) */
+@media (min-width: 1600px) {
+
+    .body-login {
+        font-family: 'made_evolve_sans_evoregular';
+        background-repeat: no-repeat;
+        overflow: hidden;
+        height: 100%;
+        width: 100%;
+    }
+
+    .login-wrapper {
+        margin: 5vh;
+        border-radius: 25px;
+        width: 40%;
+    }
+
+    .login-header h1 {
+        font-size: 3.2rem;
+        margin-bottom: 80px;
+    }
+
+    .login-form input {
+        height: 2vh;
+        width: 50%;
+        border: none;
+        outline: none;
+        box-sizing: border-box;
+        font-size: 1.1rem;
+        border-radius: 13px;
+        left: 0;
+    }
+
+    .sign-in {
+        font-family: 'made_evolve_sans_evoregular';
+        height: 2vh;
+        width: 50%;
+        border: none;
+        outline: none;
+        padding-inline: 10%;
+        box-sizing: border-box;
+        font-size: 1.3rem;
+        letter-spacing: 1px;
+        font-weight: bold;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+    
+    .back-home {
+        font-family: 'made_evolve_sans_evoregular';
+        height: 2vh;
+        width: 50%;
+        border: none;
+        outline: none;
+        box-sizing: border-box;
+        font-size: 1.3rem;
+        letter-spacing: 1px;
+        font-weight: bold;
+        margin-bottom: 10%;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+}
+
+/* login.html.twig (PC (1920x1080)) */
+@media (min-width: 1920px) {
+
+    .login-wrapper {
+        margin: 20vh;
+        border-radius: 25px;
+        width: 30%;
+    }
+
+    .login-header h1 {
+        font-size: 3.5rem;
+        margin-bottom: 80px;
+    }
+
+    .login-form input {
+        height: 5vh;
+        width: 50%;
+        border: none;
+        outline: none;
+        box-sizing: border-box;
+        font-size: 1.1rem;
+        border-radius: 13px;
+        left: 0;
+    }
+
+    .sign-in {
+        font-family: 'made_evolve_sans_evoregular';
+        height: 5vh;
+        width: 50%;
+        border: none;
+        outline: none;
+        padding-inline: 10%;
+        box-sizing: border-box;
+        font-size: 1.3rem;
+        letter-spacing: 1px;
+        font-weight: bold;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+    
+    .back-home {
+        font-family: 'made_evolve_sans_evoregular';
+        height: 5vh;
+        width: 50%;
+        border: none;
+        outline: none;
+        box-sizing: border-box;
+        font-size: 1.3rem;
+        letter-spacing: 1px;
+        font-weight: bold;
+        margin-bottom: 10%;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+}

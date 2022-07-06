@@ -1,0 +1,1276 @@
+/* profil.html.twig (Iphone SE (375x667))*/
+
+.body-profile {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'made_evolve_sans_evoregular';
+    width: 100%;
+    height: 590px;
+    background-image: url('../images/profilBackground(1).png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.profile-wrapper {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 82vh;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    background: var(--third-background);
+}
+
+.navbar-list {
+    background: var(--fourth-background);
+    width: 100%;
+    height: 10%;
+    display: flex;
+}
+
+.tab {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    font-weight: 700;
+    cursor: pointer;
+    color: var(--text-icons);
+}
+
+.profile-content-wrapper {
+    display: flex;
+    margin: 3%;
+}
+
+.content {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+    color: var(--text-icons);
+}
+
+.profile-info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+}
+
+.profile-info-row-premium {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 3%;
+    padding: 2%;
+    width: 88%;
+    background: var(--second-background);
+    border-radius: 15px;
+    left: 1%;
+    color: var(--text-icons);
+}
+
+.profil-help-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3.5vh;
+    width: 35vw;
+    font-size: 1.1rem;
+    color: var(--text-icons);
+    border-radius: 15px;
+    background: var(--second-background);
+    box-shadow:  5px 5px 10px var(--first-shadow-second-background),
+                -5px -5px 10px var(--second-shadow-second-background);
+}
+
+.profil-help-btn:hover {
+    box-shadow: inset 5px 5px 10px var(--first-shadow-second-background),
+                inset -5px -5px 10px var(--second-shadow-second-background);
+    transition: all 0.2s ease-out;
+    color: var(--text-green);
+}
+
+.profile-info-row {
+    position: relative;
+    margin-bottom: 3%;
+    padding: 1%;
+    width: 90%;
+    background: var(--second-background);
+    border-radius: 15px;
+    left: 1%;
+}
+
+.profile-info-box {
+    display: flex;
+    flex-direction: row;
+}
+
+.profile-info-firstname {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    cursor: default;
+}
+
+.profile-info-firstname h4 {
+    padding: 6%;
+    padding-right: 0;
+    padding-bottom: 2%;
+    margin: 0;
+}
+
+.profile-info-firstname p {
+    padding: 6%;
+    padding-bottom: 2%;
+}
+
+.profile-info-lastname {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    cursor: default;
+}
+
+.profile-info-lastname h4 {
+    padding: 6%;
+    padding-right: 0;
+    margin: 0;
+}
+
+.profile-info-lastname p {
+    padding: 6%;
+}
+
+.profile-info-email {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    cursor: default;
+}
+
+.profile-info-email h4 {
+    padding: 6%;
+    padding-right: 0;
+    margin: 0;
+}
+
+.profile-info-email p {
+    padding: 6%;
+}
+
+.profile-info-phone {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    cursor: default;
+}
+
+.profile-info-phone h4 {
+    padding: 6%;
+    margin: 0;
+}
+
+.profile-info-phone p{
+    padding: 6%;
+    padding-inline: 0;
+}
+
+.edit-profile-btn-box {
+    position: relative;
+    display: flex;
+    height: 5vh;
+    width: 30%;
+    left: 5%;
+    margin: 1%;
+}
+
+.edit-profile-phone-btn-box {
+    position: relative;
+    display: flex;
+    height: 5vh;
+    width: 50%;
+    left: 5%;
+    margin: 1%;
+}
+
+.edit-profile-password-btn-box {
+    position: relative;
+    display: flex;
+    height: 5vh;
+    width: 40%;
+    top: 1vh;
+    left: 7vw;
+}
+
+.profile-contact {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1.2rem;
+}
+
+.profile-contact-row1 {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 15vh;
+    width: 95vw;
+    margin-bottom: 7vh;
+    left: -3%;
+    margin-top: 20%;
+}
+
+.profile-contact-row2 {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 15vh;
+    width: 95vw;
+    left: -3%;
+}
+
+.profile-contact-first {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 35%;
+    background: var(--header-footer);
+    margin-right: 7%;
+    left: -3vw;
+    border-radius: 15px;
+    cursor: default;
+    background: var(--second-background);
+}
+
+.profile-contact-first h4 {
+    padding: 6%;
+    margin: 0;
+}
+
+.profile-contact-first .profile-contact-p {
+    padding: 6%;
+}
+
+.profile-contact-second {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.2rem;
+    width: 35%;
+    background: var(--header-footer);
+    left: -3vw;
+    border-radius: 15px;
+    cursor: default;
+    background: var(--second-background);
+}
+
+.profile-contact-second h4 {
+    padding: 6%;
+    margin: 0;
+}
+
+.profile-contact-second .profile-contact-p {
+    padding: 6%;
+}
+
+.edit-content-btn-box {
+    position: relative;
+    display: flex;
+    height: 5vh;
+    width: 30%;
+    left: 3%;
+    margin-top: 7%;
+    margin-left: 3%;
+}
+
+.edit-profile-btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    border: transparent;
+    font-size: 1rem;
+    height: 5vh;
+    width: 100%;
+    color: var(--text-icons);
+    background: var(--second-background);
+    box-shadow:  5px 5px 10px var(--first-shadow-second-background),
+                 -5px -5px 10px var(--second-shadow-second-background);
+}
+
+.edit-profile-btn:hover {
+    color: var(--text-icons);
+    box-shadow: inset 5px 5px 10px var(--first-shadow-second-background),
+                inset -5px -5px 10px var(--second-shadow-second-background);
+}
+
+/* anim */
+
+.active {
+    background: var(--third-background);
+    color: var(--text-green);
+    transition: all 0.3s ease;
+    font-size: 1.7rem;
+    border-bottom: none;
+}
+
+.tab:not(.active) {
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
+}
+
+
+.activeContent {
+    animation: fade 0.5s forwards;
+    z-index: 1;
+}
+@keyframes fade {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+
+/* profile.html.twig (Iphone 13 max (428x926)) */
+@media (min-width: 428px) {
+
+    .body-profile {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'made_evolve_sans_evoregular';
+        height: 750px;
+        width: 100%;
+        background-image: url('../images/profilBackground(1).png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        overflow: hidden;
+    }
+
+    .profile-wrapper {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: 73vh;
+        border-radius: 15px;
+    }
+
+    .profile-info-row-premium {
+        font-size: 1.3rem;
+    }
+
+    .profil-help-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 3.5vh;
+        width: 30vw;
+        font-size: 1.1rem;
+        border-radius: 15px;
+    }
+
+    .profile-info-firstname {
+        margin: 0;
+        font-size: 1.4rem;
+    }
+
+    .profile-info-lastname {
+        display: flex;
+        flex-direction: row;
+        font-size: 1.4rem;
+    }
+
+    .profile-info-email {
+        display: flex;
+        flex-direction: row;
+        font-size: 1.4rem;
+    }
+
+    .profile-info-phone {
+        display: flex;
+        flex-direction: row;
+        font-size: 1.4rem;
+    }
+
+    .edit-profile-btn-box {
+        position: relative;
+        display: flex;
+        height: 5vh;
+        width: 30%;
+        left: 5%;
+        margin: 1%;
+    }
+    
+    .edit-profile-phone-btn-box {
+        position: relative;
+        display: flex;
+        height: 5vh;
+        width: 50%;
+        left: 5%;
+        margin: 1%;
+    }
+
+    .profile-contact-first {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 35%;
+        margin-right: 8%;
+        left: -3vw;
+        font-size: 1.4rem;
+    }
+
+    .profile-contact-second {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 35%;
+        left: -3vw;
+        font-size: 1.4rem;
+    }
+
+    .edit-content-btn-box {
+        position: relative;
+        display: flex;
+        height: 5vh;
+        width: 30%;
+        margin-top: 7%;
+        margin-left: 3%;
+    }
+}
+
+/* profile.html.twig (iPad (810x1080)) */
+@media (min-width: 810px) {
+
+    .body-profile {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'made_evolve_sans_evoregular';
+        width: 100%;
+        height: 100vh;
+        background-image: url('../images/profilBackground(1).png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        overflow: hidden;
+    }
+
+    .profile-wrapper {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: 83vh;
+        border-radius: 15px;
+    }
+
+    .profile-info-row-premium {
+        position: relative;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-bottom: 3%;
+        padding: 2%;
+        width: 68%;
+        background: var(--second-background);
+        border-radius: 15px;
+        left: 11%;
+        font-size: 1.35rem;
+    }
+
+    .profil-help-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 3.5vh;
+        width: 20vw;
+        font-size: 1.1rem;
+        border-radius: 15px;
+    }
+
+    .profile-info-row {
+        position: relative;
+        margin-bottom: 3%;
+        padding: 1%;
+        width: 70%;
+        border-radius: 15px;
+        left: 11%;
+    }
+
+    .profile-info-phone p{
+        padding: 6%;
+        padding-inline: 6%;
+    }
+
+    .profile-info-phone h4 {
+        padding: 6%;
+        padding-right: 0;
+        margin: 0;
+    }
+
+    .edit-profile-btn-box {
+        position: relative;
+        display: flex;
+        height: 5vh;
+        width: 25%;
+        left: 5%;
+        margin: 1%;
+    }
+    
+    .edit-profile-phone-btn-box {
+        position: relative;
+        display: flex;
+        height: 5vh;
+        width: 38%;
+        left: 5%;
+        margin: 1%;
+    }
+    
+    .edit-profile-password-btn-box {
+        position: relative;
+        display: flex;
+        height: 5vh;
+        width: 30%;
+        top: 0.5vh;
+        left: 15vw;
+    }
+
+    .profile-contact-row1 {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        height: 15vh;
+        width: 95vw;
+        margin-bottom: 7vh;
+        left: -3%;
+        margin-top: 10%;
+    }
+    
+    .edit-content-btn-box {
+        position: relative;
+        display: flex;
+        height: 5vh;
+        width: 20%;
+        margin-top: 7%;
+        margin-left: 3%;
+    }
+
+    .edit-profile-btn {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 15px;
+        border: transparent;
+        font-size: 1.1rem;
+        height: 4vh;
+        width: 100%;
+    }
+}
+
+/* profile.html.twig (iPad Pro(1024x1366)) */
+@media (min-width: 1024px) {
+
+    .body-profile {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'made_evolve_sans_evoregular';
+        width: 100%;
+        height: 90vh;
+        background-image: url('../images/profilBackground(1).png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        overflow: hidden;
+    }
+    
+    .profile-wrapper {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: 79vh;
+        border-radius: 15px;
+    }
+
+    .navbar-list {
+        width: 100%;
+        height: 8%;
+        display: flex;
+    }
+
+    .profile-info-row-premium {
+        font-size: 1.4rem;
+    }
+
+    .profil-help-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 3.5vh;
+        width: 15vw;
+        font-size: 1.2rem;
+        border-radius: 15px;
+    }
+
+    .edit-profile-btn-box {
+        position: relative;
+        display: flex;
+        height: 5vh;
+        width: 23%;
+        left: 5%;
+        margin: 1%;
+    }
+    
+    .edit-profile-phone-btn-box {
+        position: relative;
+        display: flex;
+        height: 5vh;
+        width: 35%;
+        left: 5%;
+        margin: 1%;
+    }
+    
+    .edit-profile-password-btn-box {
+        position: relative;
+        display: flex;
+        height: 5vh;
+        width: 28%;
+        top: 0.5vh;
+        left: 15vw;
+    }
+    
+    .edit-content-btn-box {
+        position: relative;
+        display: flex;
+        height: 5vh;
+        width: 18%;
+        margin-top: 7%;
+        margin-left: 3%;
+    }
+
+    .edit-profile-btn {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 15px;
+        border: transparent;
+        font-size: 1.2rem;
+        height: 4vh;
+        width: 100%;
+    }
+}
+
+/* profile.html.twig (Laptop MDPI(1280x800)) */
+@media (min-width: 1280px) {
+
+    .body-profile {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'made_evolve_sans_evoregular';
+        width: 100%;
+        height: 130vh;
+        background-image: url('../images/profilBackground(1).png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        overflow: hidden;
+    }
+    
+    .profile-wrapper {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: 111vh;
+        border-radius: 15px;
+    }
+
+    .profile-info-row-premium {
+        position: relative;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-bottom: 3%;
+        padding: 2%;
+        width: 58%;
+        border-radius: 15px;
+        left: 16%;
+        font-size: 1.4rem;
+    }
+
+    .profil-help-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 5vh;
+        width: 12vw;
+        font-size: 1.1rem;
+        border-radius: 15px;
+    }
+
+    .profile-info-row {
+        position: relative;
+        margin-bottom: 3%;
+        padding: 1%;
+        width: 60%;
+        border-radius: 15px;
+        left: 16%;
+    }
+
+    .profile-info-firstname h4 {
+        padding: 3%;
+        padding-right: 0;
+        margin: 0;
+    }
+    
+    .profile-info-firstname p {
+        padding: 3%;
+    }
+    
+    .profile-info-lastname h4 {
+        padding: 3%;
+        padding-right: 0;
+        margin: 0;
+    }
+    
+    .profile-info-lastname p {
+        padding: 3%;
+    }
+    
+    .profile-info-email h4 {
+        padding: 3%;
+        padding-right: 0;
+        margin: 0;
+    }
+    
+    .profile-info-email p {
+        padding: 3%;
+    }
+    
+    .profile-info-phone h4 {
+        padding: 3%;
+        padding-right: 0;
+        margin: 0;
+    }
+    
+    .profile-info-phone p{
+        padding: 3%;
+    }
+
+    .edit-profile-btn-box {
+        position: relative;
+        display: flex;
+        height: 5vh;
+        width: 20%;
+        left: 5%;
+        margin: 1%;
+    }
+    
+    .edit-profile-phone-btn-box {
+        position: relative;
+        display: flex;
+        height: 5vh;
+        width: 30%;
+        left: 5%;
+        margin: 1%;
+    }
+    
+    .edit-profile-password-btn-box {
+        position: relative;
+        display: flex;
+        height: 5vh;
+        width: 25%;
+        top: 0vh;
+        left: 19vw;
+    }
+
+    .profile-contact-row1 {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        height: 20vh;
+        width: 95vw;
+        margin-bottom: 7vh;
+        left: -3%;
+        margin-top: 7%;
+    }
+    
+    .profile-contact-row2 {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        height: 20vh;
+        width: 95vw;
+        left: -3%;
+    }
+
+    .profile-contact-first {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 30%;
+        background: var(--header-footer);
+        margin-right: 7%;
+        left: -3vw;
+        border-radius: 15px;
+        cursor: default;
+        background: var(--second-background);
+    }
+
+    .profile-contact-second {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-size: 1.2rem;
+        width: 30%;
+        background: var(--header-footer);
+        left: -3vw;
+        border-radius: 15px;
+        cursor: default;
+        background: var(--second-background);
+    }
+
+    .edit-content-btn-box {
+        position: relative;
+        display: flex;
+        height: 5vh;
+        width: 15%;
+        margin-top: 7%;
+    }
+
+    .edit-profile-btn {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 15px;
+        border: transparent;
+        font-size: 1.1rem;
+        height: 5vh;
+        width: 100%;
+    }
+}
+
+/* profile.html.twig (Galaxy tab S7(1600x2560)) */
+@media (min-width: 1600px) {
+
+    .body-profile {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'made_evolve_sans_evoregular';
+        width: 100%;
+        height: 90vh;
+        background-image: url('../images/profilBackground(1).png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        overflow: hidden;
+    }
+
+    .profile-wrapper {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: 45vh;
+        border-radius: 15px;
+    }
+
+    .navbar-list {
+        width: 100%;
+        height: 10%;
+        display: flex;
+    }
+
+    .profile-info-row-premium {
+        font-size: 1.5rem;
+    }
+
+    .profil-help-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 2vh;
+        width: 12vw;
+        font-size: 1.2rem;
+        border-radius: 15px;
+    }
+
+    .profile-info-firstname {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        font-size: 1.5rem;
+        height: 3vh;
+    }
+
+    .profile-info-lastname {
+        display: flex;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        font-size: 1.5rem;
+        height: 3vh;
+    }
+
+    .profile-info-email {
+        display: flex;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        font-size: 1.5rem;
+        height: 3vh;
+    }
+
+    .profile-info-phone {
+        display: flex;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        font-size: 1.5rem;
+        height: 3vh;
+    }
+
+    .edit-profile-btn-box {
+        position: relative;
+        display: flex;
+        height: 2vh;
+        width: 15%;
+        left: 5%;
+        margin: 1%;
+    }
+    
+    .edit-profile-phone-btn-box {
+        position: relative;
+        display: flex;
+        height: 2vh;
+        width: 23%;
+        left: 5%;
+        margin: 1%;
+    }
+
+    .edit-profile-password-btn-box {
+        position: relative;
+        display: flex;
+        height: 2vh;
+        width: 19%;
+        top: 0vh;
+        left: 19vw;
+    }
+
+    .edit-content-btn-box {
+        position: relative;
+        display: flex;
+        height: 5vh;
+        width: 11%;
+        left: 15%;
+        margin-top: 7%;
+        margin-left: 3%;
+    }
+
+    .edit-profile-btn {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 15px;
+        border: transparent;
+        font-size: 1.1rem;
+        height: 2vh;
+        width: 100%;
+    }
+
+    .profile-contact-row1 {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        height: 6vh;
+        width: 95vw;
+        margin-bottom: 4vh;
+        left: -3%;
+        margin-top: 10%;
+    }
+    
+    .profile-contact-row2 {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        height: 6vh;
+        width: 95vw;
+        left: -3%;
+    }
+
+    .profile-contact-first {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        width: 25%;;
+        margin-right: 5%;
+        left: -3vw;
+        font-size: 1.5rem;
+    }
+
+    .profile-contact-second {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        width: 25%;
+        left: -3vw;
+        font-size: 1.5rem;
+    }
+
+    .profile-contact-first h4 {
+    	padding: 6%;
+	    padding-right: 0;
+    	margin: 0;
+}
+
+    .profile-contact-second h4 {
+        padding: 6%;
+        padding-right: 0;
+        margin: 0;
+    }
+}
+
+/* profile.html.twig (PC 1920x1080 (1920x1080)) */
+@media (min-width: 1920px) {
+
+    .body-profile {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'made_evolve_sans_evoregular';
+        width: 100%;
+        height: 120vh;
+        background-image: url('../images/profilBackground(1).png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        overflow: hidden;
+    }
+
+    .profile-wrapper {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: 97vh;
+        border-radius: 15px;
+    }
+
+    .navbar-list {
+        width: 100%;
+        height: 10%;
+        display: flex;
+    }
+
+    .profile-info-row-premium {
+        position: relative;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-bottom: 3%;
+        padding: 2%;
+        width: 53%;
+        border-radius: 15px;
+        left: 18.5%;
+    }
+
+    .profil-help-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 5vh;
+        width: 10vw;
+        font-size: 1.1rem;
+        border-radius: 15px;
+    }
+
+    .profile-info-row {
+        position: relative;
+        margin-bottom: 3%;
+        padding: 1%;
+        width: 55%;
+        border-radius: 15px;
+        left: 18.5%;
+    }
+
+    .profile-contact-first {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        width: 30%;
+        margin-right: 5%;
+        left: -3vw;
+        font-size: 1.5rem;
+    }
+
+    .profile-contact-second {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        width: 30%;
+        left: -3vw;
+        font-size: 1.5rem;
+    }
+
+    .profile-contact-row1 {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        height: 10vh;
+        width: 95vw;
+        margin-bottom: 10vh;
+        left: -3%;
+        margin-top: 5%;
+    }
+    
+    .profile-contact-row2 {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        height: 10vh;
+        width: 95vw;
+        left: -3%;
+    }
+
+    .profile-info-firstname {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        font-size: 1.5rem;
+        height: 3vh;
+        padding-bottom: 3%;
+        padding-top: 2%;
+    }
+
+    .profile-info-lastname {
+        display: flex;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        font-size: 1.6rem;
+        height: 3vh;
+    }
+
+    .profile-info-email {
+        display: flex;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        font-size: 1.6rem;
+        height: 3vh;
+    }
+
+    .profile-info-phone {
+        display: flex;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        font-size: 1.6rem;
+        height: 3vh;
+    }
+
+    .edit-profile-btn-box {
+        position: relative;
+        display: flex;
+        height: 4vh;
+        width: 15%;
+        left: 2%;
+        margin: 1%;
+    }
+
+    .edit-profile-phone-btn-box {
+        position: relative;
+        display: flex;
+        height: 5vh;
+        width: 23%;
+        left: 2%;
+        margin: 1%;
+    }
+    
+    .edit-profile-password-btn-box {
+        position: relative;
+        display: flex;
+        height: 5vh;
+        width: 19%;
+        left: 19vw;
+    }
+
+    .edit-content-btn-box {
+        position: relative;
+        display: flex;
+        height: 5vh;
+        width: 10%;
+        left: 10%;
+        margin-top: 7%;
+        margin-left: 3%;
+    }
+
+    .edit-profile-btn {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 15px;
+        border: transparent;
+        font-size: 1.2rem;
+        height: 4vh;
+        width: 100%;
+    }
+}
+
+/* profile.html.twig (PC 1920x1080 (1920x1080)) */
+@media (min-width: 1920px) {
+
+
+
+}

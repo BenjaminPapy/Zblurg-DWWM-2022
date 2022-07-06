@@ -1,0 +1,16 @@
+
+<div class="card" id="ship-{{ ship.id }}" style="background-image:url('{{ vich_uploader_asset(ship, 'shipViewFile') }}')">
+    <a  class="card-link" id="ship-{{ ship.id }}" href="{{ path('admin_ship_show', {'id': ship.id}) }}">
+        <div class="card-box">
+            <h2 class="card-title">{{ ship.name }}</h2>
+            <div class="card-text">
+                {% if ship.premium %}
+                    <div class="text text-warning">PREMIUM</div>
+                {% endif %}
+                <div class="card-line">{{ ship.brand }} <!-- remplacer par logo? --> </div>
+                <div class="card-line">{{ ship.type }}</div>
+                <div class="card-line">{{ ship.size }}</div>
+            </div>
+        </div>
+    </a>
+</div>
